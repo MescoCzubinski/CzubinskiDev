@@ -1,0 +1,16 @@
+.stroke:hover path {
+  stroke: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+.fill:hover path {
+  fill: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+.stroke.selected path {
+  stroke: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+.fill.selected path {
+  fill: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}

@@ -11,4 +11,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: #00ffff;
+  --color-secondary: #ff3030;
+  --color-detail: #181818;
+  --color-background: #252525;
+  --color-white: #f0f0f0;
+  --color-black: #0f0f0f;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE i Edge */
 }

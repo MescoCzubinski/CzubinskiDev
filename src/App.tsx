@@ -1,8 +1,19 @@
-import { useTranslation } from "react-i18next";
-
+import Navigation from "./components/Navigation/Navigation";
+import Carusel from "./components/Carusel/Carusel";
+import Home from "./screens/Home";
+import First from "./screens/First";
+import Second from "./screens/Second";
 function App() {
-  const { t } = useTranslation();
-  return <div className="bg-white dark:bg-black">{t("title")}</div>;
+  return (
+    <div className="">
+      <Navigation />
+      <Carusel>
+        <Home />
+        <First />
+        <Second />
+      </Carusel>
+    </div>
+  );
 }
 
 export default App;
