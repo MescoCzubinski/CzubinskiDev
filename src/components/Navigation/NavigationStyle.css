@@ -1,16 +1,19 @@
-.stroke:hover path {
+.nav-stroke:hover path {
   stroke: var(--color-primary);
   transition: all 0.3s ease-in-out;
 }
-.fill:hover path {
+.nav-fill:hover path {
   fill: var(--color-primary);
   transition: all 0.3s ease-in-out;
 }
-.stroke.selected path {
+.nav-stroke.selected path {
   stroke: var(--color-primary);
   transition: all 0.3s ease-in-out;
 }
-.fill.selected path {
+.nav-fill.selected path {
   fill: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+.transition {
   transition: all 0.3s ease-in-out;
 }

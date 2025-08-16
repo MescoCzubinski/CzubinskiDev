@@ -1,0 +1,17 @@
+.home-stroke:hover path {
+  stroke: var(--color-black);
+  transition: all 0.3s ease-in-out;
+}
+.home-fill:hover path {
+  fill: var(--color-black);
+  transition: all 0.3s ease-in-out;
+}
+.text-shadow {
+  text-shadow: 1px 1px 0 var(--color-primary);
+}
+.text-shadow-1 {
+  text-shadow: none;
+}
+.text-shadow-2 {
+  text-shadow: 1px 1px 0 var(--color-white);
+}

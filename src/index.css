@@ -12,12 +12,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-primary: #00ffff;
+  --color-primary: #19f2d1;
   --color-secondary: #ff3030;
   --color-detail: #181818;
   --color-background: #303030;
   --color-white: #f0f0f0;
   --color-black: #0f0f0f;
+
+  --navbar-width: 4rem;
 }
 body::-webkit-scrollbar {
   display: none;
