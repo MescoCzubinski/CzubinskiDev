@@ -1,10 +1,9 @@
 {
   "about-title": "O mnie",
-  "about-description-1": "",
-  "about-description-2": "",
-  "about-description-3": "",
-  "about-description-4": "",
+  "about-description-1": "Uwielbiam tworzyć. Niezależnie od tego jako kto, Frontent Developer, Project Manager. Najpierw ludzie, ponieważ najlepsze projekty powstają, gdy pracujemy razem.",
+  "about-description-2": "Gdy koduję, robię to krok po kroku, od jednej wersji do drugiej. Just like in Scrum methodology. Jestem też studentem Inżynierii Systemów na <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>Politechnice Wrocławskiej</a>.",
+  "about-description-3": "Poza IT interesuje się historią, czytam książki fantasy i political fiction, gram w RPGi, szczególnie od <a href='https://cdprojektred.com/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>CD Projekt Red</a>.",
   "wmsdev-title": "WMS_DEV",
-  "wmsdev-description-1": "Aktywny programista, Project Manager i współprezes Koła Naukowego WMS_DEV na Politechnice Wrocławskiej",
-  "wmsdev-description-2": "Tworzymy aplikacje webowe dla społeczności studentów. Wszystko w rynkowych technologiach, zgodnie z metodologią Scrum."
+  "wmsdev-description-1": "Aktywny programista, Project Manager i współprezes Koła Naukowego  <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>WMS_DEV</a> na <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>Politechnice Wrocławskiej</a>",
+  "wmsdev-description-2": "Tworzymy aplikacje webowe dla studentów. Wszystko najnowszych technologiach, metodyce Scrum."
 }

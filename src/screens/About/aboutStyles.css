@@ -2,34 +2,34 @@
   box-shadow: -5px -5px 0 var(--color-detail), 5px 5px 0 var(--color-white);
 }
 .animate-duck-patrol {
-  width: 60px;
+  width: 31px;
   animation: duck-patrol 22s linear infinite;
   transform-origin: center;
 }
 
 @keyframes duck-patrol {
   0% {
-    left: 0;
+    left: var(--navbar-width);
     transform: scaleX(1);
   }
   49% {
-    left: calc(100% - 60px);
+    left: calc(100% - var(--navbar-width));
     transform: scaleX(1);
   }
   50% {
-    left: calc(100% - 60px);
+    left: calc(100% - var(--navbar-width));
     transform: scaleX(-1);
   }
   50.01% {
-    left: calc(100% - 60px);
+    left: calc(100% - var(--navbar-width));
     transform: scaleX(-1);
   }
   99% {
-    left: 0;
+    left: var(--navbar-width);
     transform: scaleX(-1);
   }
   100% {
-    left: 0;
+    left: var(--navbar-width);
     transform: scaleX(1);
   }
 }

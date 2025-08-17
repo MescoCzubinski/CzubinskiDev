@@ -13,14 +13,13 @@ export default function About() {
       key="about"
       id="about"
     >
-      <div className="h-full w-full md:w-3/5 flex items-center justify-center px-5 py-10 gap-x-5 text-[var(--color-white)">
+      <div className="h-full w-full md:w-3/5 flex items-center justify-center px-5 py-10 gap-x-10 text-[var(--color-white)">
         <TextContainer
           title={t("about-title")}
           paragraphs={[
             t("about-description-1"),
             t("about-description-2"),
             t("about-description-3"),
-            t("about-description-4"),
           ]}
         />
         <div className="h-full w-full flex flex-col gap-y-5">
@@ -38,7 +37,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-1 left-[calc(var(--navbar-width)+4px)] animate-duck-patrol">
+      <div className="absolute bottom-1 animate-duck-patrol">
         <RubberDuck />
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function TextContainer({
       <div className="text-3xl font-bold tracking-wide text-shadow-primary">
         {title}
       </div>
-      <div className="flex text-lg flex-col gap-y-3">
+      <div className="flex text-lg flex-col gap-y-6 text-justify">
         {paragraphs.map((paragraph, index) => (
           <div
             key={index}
