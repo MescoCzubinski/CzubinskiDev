@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import "./CaruselStyles.css";
 
 export default function Carusel({ children }: { children: React.ReactNode }) {
   const carouselRef = useRef<HTMLDivElement>(null);

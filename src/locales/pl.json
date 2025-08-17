@@ -1,3 +1,10 @@
 {
-  "title": "Witaj świecie!"
+  "about-title": "O mnie",
+  "about-description-1": "",
+  "about-description-2": "",
+  "about-description-3": "",
+  "about-description-4": "",
+  "wmsdev-title": "WMS_DEV",
+  "wmsdev-description-1": "Aktywny programista, Project Manager i współprezes Koła Naukowego WMS_DEV na Politechnice Wrocławskiej",
+  "wmsdev-description-2": "Tworzymy aplikacje webowe dla społeczności studentów. Wszystko w rynkowych technologiach, zgodnie z metodologią Scrum."
 }

@@ -1,17 +1,16 @@
+.home-stroke path {
+  stroke: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+.home-fill path {
+  fill: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
 .home-stroke:hover path {
-  stroke: var(--color-black);
+  stroke: var(--color-primary);
   transition: all 0.3s ease-in-out;
 }
 .home-fill:hover path {
-  fill: var(--color-black);
+  fill: var(--color-primary);
   transition: all 0.3s ease-in-out;
-}
-.text-shadow {
-  text-shadow: 1px 1px 0 var(--color-primary);
-}
-.text-shadow-1 {
-  text-shadow: none;
-}
-.text-shadow-2 {
-  text-shadow: 1px 1px 0 var(--color-white);
 }
