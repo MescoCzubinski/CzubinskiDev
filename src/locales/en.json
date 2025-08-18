@@ -1,9 +1,11 @@
 {
   "about-title": "About me",
-  "about-description-1": "I'm passionate about creating things. No matter whether as a Frontent Developer, or Project manager. Firstly, the people, because when we are united we can easily ship products.",
+  "about-description-1": "I'm passionate about creating things. No matter whether as a Frontent Developer, or Project manager. In my work, I belive in team and interactions, because when we are united we can easily ship products.",
   "about-description-2": "I code step by step, from one version to another. Just like in Scrum methodology. I'm studing at <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>Wrocław University of Technology</a> at the Bachelor's program of Systems Engineering.",
   "about-description-3": "Besides IT I love fantasy books and games, especially from the polish game studio <a href='https://cdprojektred.com/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>CD Projekt Red</a>.",
   "wmsdev-title": "WMS_DEV",
   "wmsdev-description-1": "Active programmer, Project Manager and co-president of the <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>WMS_DEV</a> scientific club at <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>Wrocław University of Technology</a>.",
-  "wmsdev-description-2": "We create web applications for the student community, all based on Scrum and market-leading technologies."
+  "wmsdev-description-2": "We create web applications for the student community, all based on Scrum and market-leading technologies.",
+  "portfolio-title": "Portfolio",
+  "portfolio-description-1": "Here you can find my projects. Click on the organisation icons to learn more about them."
 }
