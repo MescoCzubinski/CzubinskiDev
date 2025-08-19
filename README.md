@@ -1,13 +1,87 @@
-<h1 align="left">Hey!</h1>
+# Hi, it's my personal webpage
 
-###
+## 📑 Table of contents
 
-<p align="left">My name is Mieszko and I'm a systems engineering student at the University of Science and Technology in Wrocław. I'm really passionate about Project Management. Currently, I serve as both a PM and co-president at the Computer Science Students Club WMS_DEV.</p>
+- [About me](#about-me)
+- [Demo](#demo)
+- [Technologies](#technologies)
+- [Installation and build](#installation-and-build)
+- [Project structure](#project-structure)
+- [Contact](#contact)
 
-###
+## About me
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=MescoCzubinski&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-</div>
+I'm Mieszko Czubinski, a Systems Engineering student at Wrocław University of Technology. I'm also an active programmer (Frontend), project manager, and co-president of the WMS_DEV scientific club at this university.
 
-###
+## Demo
+
+🔗 [Click and check it](https://czubinski.dev)
+
+## Technologies
+
+- React,
+- TypeScript,
+- TailwindCSS,
+- i18next,
+- SVGr,
+- Vite
+
+## Installation and build
+
+```bash
+npm install
+npm run dev
+```
+
+```bash
+npm run build
+```
+
+## Project structure
+
+```bash
+src/
+├── components/
+│   ├── Carousel/
+│   ├── Navigation/
+│   │   ├── icons/
+│   │   └── Navigation.tsx
+│   ├── PortfolioCards/
+│   │   ├── icons/
+│   │   ├── Arvalis.tsx
+│   │   ├── Intro.tsx
+│   │   ├── KalkulacjaStraczkowe.tsx
+│   │   ├── KalkulatorRozpylaczy.tsx
+│   │   ├── PorownywarkaOdmian.tsx
+│   │   └── WMS_DEV.tsx
+│   └── TextContainer.tsx
+├── locales/
+│   ├── en.json
+│   └── pl.json
+├── screens/
+│   ├── About/
+│   │   ├── icons/
+│   │   ├── About.tsx
+│   │   └── duck-animation.css
+│   ├── Home/
+│   │   ├── icons/
+│   │   └── Home.tsx
+│   └── Portfolio/
+│       └── Portfolio.tsx
+├── App.tsx
+├── index.css
+├── main.tsx
+├── shadow.css
+├── svg.css
+├── vite-env.d.ts
+```
+
+## Contact
+
+- [Click and check this webpage](https://czubinski.dev)
+
+- [mieszkoczubinski@gmail.com](mailto:mieszkoczubinski@gmail.com)
+
+- [Check my LinkedIn](https://www.linkedin.com/in/mieszko-czubinski/)
+
+- [Check my GitHub](https://github.com/MescoCzubinski)

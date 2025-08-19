@@ -6,12 +6,10 @@ import FigmaIcon from "./icons/Figma.svg?react";
 import TailwindCSSIcon from "./icons/TailwindCSS.svg?react";
 import HTMLIcon from "./icons/HTML.svg?react";
 import CSSIcon from "./icons/CSS.svg?react";
-import DockerIcon from "./icons/Docker.svg?react";
 import PythonIcon from "./icons/Python.svg?react";
 import CppIcon from "./icons/Cpp.svg?react";
 
 import { useState, useEffect } from "react";
-import "./HomeStyles.css";
 
 const positions = ["Developer.", "Project Manager.", "Frontend Developer."];
 
@@ -61,8 +59,8 @@ export default function Home() {
       key="home"
       id="home"
     >
-      <div className="h-full flex flex-col items-start justify-center  text-[var(--color-white)]  gap-y-6">
-        <div className="flex flex-col text-4xl font-bold tracking-wide stroke-1 stroke-[var(--color-black)] text-shadow-primary">
+      <div className="h-full flex flex-col items-start justify-center text-[var(--color-white)]  gap-y-6">
+        <div className="flex flex-col text-4xl font-bold tracking-wide text-shadow-primary">
           <div>Hi,</div>
           <div>
             I'm{" "}
@@ -86,11 +84,10 @@ export default function Home() {
           <HTMLIcon className="h-8 w-8 home-fill" />
           <CSSIcon className="h-8 w-8 home-fill" />
           <CppIcon className="h-8 w-8 home-fill" />
-          <DockerIcon className="h-8 w-8 home-fill" />
           <PythonIcon className="h-8 w-8 home-fill" />
         </div>
         <div
-          className="text-xs px-1 py-[1px] rounded-sm border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:border-[var(--color-primary)]/75 hover:text-[var(--color-primary)]/75 tracking-widest cursor-pointer text-shadow-none font-medium"
+          className="text-xs px-1 py-[1px] rounded-sm border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:border-[var(--color-primary)]/75 hover:text-[var(--color-primary)]/75 tracking-widest cursor-pointer font-medium"
           onClick={() =>
             window.open(
               "https://www.linkedin.com/messaging/thread/new/?recipient=mieszko-czubinski",

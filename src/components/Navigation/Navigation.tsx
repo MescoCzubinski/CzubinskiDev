@@ -7,7 +7,6 @@ import PortfolioIcon from "./icons/portfolio.svg?react";
 import GithubIcon from "./icons/github.svg?react";
 import LinkedinIcon from "./icons/linkedin.svg?react";
 import EmailIcon from "./icons/email.svg?react";
-import "./NavigationStyle.css";
 import { useState } from "react";
 import i18next from "../../i18next";
 
@@ -61,7 +60,7 @@ export default function Navigation() {
                 setLanguage("pl");
                 window.location.href = "/pl";
               }}
-              className="text-[var(--color-background)] hover:text-[var(--color-primary)] cursor-pointer text-lg transition"
+              className="text-[var(--color-white)] hover:text-[var(--color-primary)] cursor-pointer text-lg transition"
             >
               PL
             </div>
@@ -70,7 +69,7 @@ export default function Navigation() {
                 setLanguage("en");
                 window.location.href = "/en";
               }}
-              className="text-[var(--color-background)] hover:text-[var(--color-primary)] cursor-pointer text-lg transition"
+              className="text-[var(--color-white)] hover:text-[var(--color-primary)] cursor-pointer text-lg transition"
             >
               EN
             </div>

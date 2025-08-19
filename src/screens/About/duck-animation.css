@@ -1,13 +1,10 @@
-.photo-shadow {
-  box-shadow: -5px -5px 0 var(--color-detail), 5px 5px 0 var(--color-white);
-}
-.animate-duck-patrol {
+.duck-animation {
   width: 31px;
-  animation: duck-patrol 22s linear infinite;
+  animation: duck-animation 22s linear infinite;
   transform-origin: center;
 }
 
-@keyframes duck-patrol {
+@keyframes duck-animation {
   0% {
     left: var(--navbar-width);
     transform: scaleX(1);

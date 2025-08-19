@@ -3,7 +3,7 @@ import MyPhoto from "./icons/MyPhoto.svg?react";
 import RubberDuck from "./icons/RubberDuck.svg?react";
 import TextContainer from "../../components/TextContainer";
 import { useTranslation } from "react-i18next";
-import "./aboutStyles.css";
+import "./duck-animation.css";
 
 export default function About() {
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-1 animate-duck-patrol">
+      <div className="absolute bottom-1 duck-animation">
         <RubberDuck />
       </div>
     </div>

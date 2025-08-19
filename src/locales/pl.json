@@ -1,11 +1,16 @@
 {
   "about-title": "O mnie",
-  "about-description-1": "Uwielbiam tworzyć. Niezależnie od tego jako kto, Frontent Developer, Project Manager. Na piewszym miejscu stawiam ludzi i interakcje między nimi, najlepsze projekty powstają, gdy pracujemy razem.",
+  "about-description-1": "Uwielbiam tworzyć. Niezależnie od tego jako kto, Developer czy Project Manager. Na piewszym miejscu stawiam ludzi i interakcje między nimi, najlepsze projekty powstają, gdy pracujemy razem.",
   "about-description-2": "Gdy koduję, robię to krok po kroku, od jednej wersji do drugiej. Just like in Scrum methodology. Jestem też studentem Inżynierii Systemów na <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>Politechnice Wrocławskiej</a>.",
-  "about-description-3": "Poza IT interesuje się historią, czytam książki fantasy i political fiction, gram w RPGi, szczególnie od <a href='https://cdprojektred.com/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>CD Projekt Red</a>.",
+  "about-description-3": "Poza IT interesuje się historią, czytam książki fantasy i political fiction, gram w strategie i RPGi od <a href='https://cdprojektred.com/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>CD Projekt Red</a>.",
   "wmsdev-title": "WMS_DEV",
   "wmsdev-description-1": "Aktywny programista, Project Manager i współprezes Koła Naukowego  <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>WMS_DEV</a> na <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='text-[var(--color-primary)]'>Politechnice Wrocławskiej</a>",
   "wmsdev-description-2": "Tworzymy aplikacje webowe dla studentów. Wszystko najnowszych technologiach, metodyce Scrum.",
   "portfolio-title": "Portfolio",
-  "portfolio-description-1": "Tutaj znajdziesz moje projekty. Kliknij na logo organizacji, aby dowiedzieć się więcej o moich projektach dla nich."
+  "portfolio-description-0": "Prezętuję kilka z moich projektów. Każde z nich jest wynikiem pracy mojej lub mojego zespołu.",
+  "portfolio-description-1": "Kliknij na logo organizacji, aby dowiedzieć się więcej o moich projektach dla nich.",
+  "kalkulacja-straczkowe-title": "Kalkulator opłacalności roślin strączkowych",
+  "kalkulacja-straczkowe-description-0": "Kalkulacja ekonomiczna, w której od potencjalnych zysków z uprawy odejmujemy koszty.",
+  "kalkulacja-straczkowe-description-1": "Oprócz przychodów z plonu do zysków dodajemy dopłaty oraz ekoschematy z systemem wykluczeń.",
+  "kalkulacja-straczkowe-description-2": "Sekcja kosztów to kilkanaście powtarzających się elementów."
 }

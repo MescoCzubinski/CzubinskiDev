@@ -1,0 +1,23 @@
+.text-shadow-primary {
+  text-shadow: 2px 2px 0 var(--color-primary);
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: var(--detail, var(--color-detail));
+}
+.text-shadow-primary-xl {
+  text-shadow: 5px 5px 0 var(--color-primary);
+  -webkit-text-stroke-width: 1.25px;
+  -webkit-text-stroke-color: var(--detail, var(--color-detail));
+}
+.text-shadow-white {
+  text-shadow: 2px 2px 0 var(--color-white);
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: var(--detail, var(--color-detail));
+}
+.text-shadow-white-xl {
+  text-shadow: 5px 5px 0 var(--color-white);
+  -webkit-text-stroke-width: 1.25px;
+  -webkit-text-stroke-color: var(--detail, var(--color-detail));
+}
+.photo-shadow {
+  box-shadow: -5px -5px 0 var(--color-detail), 5px 5px 0 var(--color-white);
+}

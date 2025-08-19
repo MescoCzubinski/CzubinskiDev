@@ -7,11 +7,7 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     let selectedElement = window.location.pathname.replace("/", "");
-    if (
-      selectedElement === "Arvalis" ||
-      selectedElement === "TopAgrarPolska" ||
-      selectedElement === "WMS_DEV"
-    ) {
+    if (selectedElement === "arvalis") {
       selectedElement = "portfolio";
     }
 

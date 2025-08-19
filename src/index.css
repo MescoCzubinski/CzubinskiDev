@@ -10,51 +10,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-detail: #101010;
+  /* --color-background: #f0f0f0;
+  --color-white: #252525; */
   --color-background: #252525;
-  --color-primary: #19f2d1;
   --color-white: #f0f0f0;
+  --color-detail: #101010;
+  --color-primary: #19f2d1;
 
+  --color-topagrar: #008437;
+  --color-arvalis: #116967;
   --navbar-width: 3rem;
+}
+.buttons-container {
+  font-family: system-ui, Anonymous Pro, monospace;
 }
 .transition {
   transition: all 0.3s ease-in-out;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-body {
-  -ms-overflow-style: none;
-}
 .hide-scrollbar {
   -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
-}
-
-.text-shadow-primary {
-  text-shadow: 2px 2px 0 var(--color-primary);
-  -webkit-text-stroke-width: 0.75px;
-  -webkit-text-stroke-color: var(--detail, var(--color-detail));
-}
-.text-shadow-none {
-  text-shadow: none;
-}
-.text-shadow-white {
-  text-shadow: 2px 2px 0 var(--color-white);
-}
-.text-shadow-white-xl {
-  text-shadow: 5px 5px 0 var(--color-white);
-  -webkit-text-stroke-width: 1.25px;
-  -webkit-text-stroke-color: var(--detail, var(--color-detail));
-}
-.text-shadow-primary-xl {
-  text-shadow: 5px 5px 0 var(--color-primary);
-  -webkit-text-stroke-width: 1.25px;
-  -webkit-text-stroke-color: var(--detail, var(--color-detail));
-}
-.text-shadow-black {
-  text-shadow: 3px 3px 0 var(--color-black);
 }
