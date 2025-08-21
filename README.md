@@ -43,17 +43,14 @@ npm run build
 src/
 ├── components/
 │   ├── Carousel/
+│   │   └── Carousel.tsx
 │   ├── Navigation/
 │   │   ├── icons/
 │   │   └── Navigation.tsx
 │   ├── PortfolioCards/
 │   │   ├── icons/
-│   │   ├── Arvalis.tsx
-│   │   ├── Intro.tsx
-│   │   ├── KalkulacjaStraczkowe.tsx
-│   │   ├── KalkulatorRozpylaczy.tsx
-│   │   ├── PorownywarkaOdmian.tsx
-│   │   └── WMS_DEV.tsx
+│   │   ├── views/
+│   │   └── PortfolioCard.tsx
 │   └── TextContainer.tsx
 ├── locales/
 │   ├── en.json

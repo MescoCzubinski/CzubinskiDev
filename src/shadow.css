@@ -18,6 +18,12 @@
   -webkit-text-stroke-width: 1.25px;
   -webkit-text-stroke-color: var(--detail, var(--color-detail));
 }
-.photo-shadow {
+.shadow-frame {
   box-shadow: -5px -5px 0 var(--color-detail), 5px 5px 0 var(--color-white);
+}
+.test {
+  color: var(--color-white);
+  text-shadow: 2px 2px 0 var(--color-detail);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--detail, var(--color-detail));
 }

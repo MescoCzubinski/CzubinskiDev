@@ -55,11 +55,11 @@ export default function Home() {
 
   return (
     <div
-      className="w-screen h-screen bg-[var(--color-background)] pl-3 md:pl-[calc(var(--navbar-width)*1.5)] relative"
+      className="w-screen h-screen md:pl-[calc(var(--navbar-width)*1.5)] relative"
       key="home"
       id="home"
     >
-      <div className="h-full flex flex-col items-start justify-center text-[var(--color-white)]  gap-y-6">
+      <div className="h-full flex flex-col items-start justify-center text-[var(--color-white)] pl-3 gap-y-6">
         <div className="flex flex-col text-4xl font-bold tracking-wide text-shadow-primary">
           <div>Hi,</div>
           <div>

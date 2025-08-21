@@ -9,7 +9,7 @@ export default function About() {
   const { t } = useTranslation();
   return (
     <div
-      className="w-screen h-screen bg-[var(--color-background)] pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center relative"
+      className="w-screen h-screen pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center relative"
       key="about"
       id="about"
     >
@@ -24,7 +24,7 @@ export default function About() {
         />
         <div className="h-full w-full flex flex-col gap-y-5">
           <div className=" w-full flex items-center justify-center">
-            <MyPhoto className="w-fit cursor-pointer photo-shadow" />
+            <MyPhoto className="w-fit cursor-pointer rounded-md shadow-frame" />
           </div>
           <div className="h-full w-full">
             <TextContainer

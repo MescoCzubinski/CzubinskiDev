@@ -90,7 +90,7 @@ export default function Navigation() {
               />
             </div>
             <div
-              title="About"
+              title="About me"
               onClick={() => {
                 scroll("about");
               }}

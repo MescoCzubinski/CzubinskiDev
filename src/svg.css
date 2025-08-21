@@ -30,8 +30,9 @@
   fill: var(--color-primary);
   transition: all 0.3s ease-in-out;
 }
-.test path {
-  fill: var(--color-white);
-  box-shadow: 2px 2px 0 var(--color-primary);
-  border: 0.75px solid var(--detail);
+.white path {
+  stroke: var(--color-white);
+}
+.dark path {
+  stroke: var(--color-background);
 }

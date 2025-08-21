@@ -21,6 +21,23 @@
   --color-arvalis: #116967;
   --navbar-width: 3rem;
 }
+html,
+body,
+* {
+  cursor: none;
+}
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  z-index: 1000;
+  border-radius: 50%;
+  pointer-events: none;
+  background: var(--color-white);
+  border: 1.5px solid var(--color-detail);
+}
 .buttons-container {
   font-family: system-ui, Anonymous Pro, monospace;
 }
