@@ -24,6 +24,6 @@
 .test {
   color: var(--color-white);
   text-shadow: 2px 2px 0 var(--color-detail);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.75px;
   -webkit-text-stroke-color: var(--detail, var(--color-detail));
 }

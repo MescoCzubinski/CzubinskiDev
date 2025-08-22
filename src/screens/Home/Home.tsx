@@ -4,6 +4,8 @@ import ReactIcon from "./icons/React.svg?react";
 import GitIcon from "./icons/Git.svg?react";
 import FigmaIcon from "./icons/Figma.svg?react";
 import TailwindCSSIcon from "./icons/TailwindCSS.svg?react";
+import ExcelIcon from "./icons/Excel.svg?react";
+import RIcon from "./icons/R.svg?react";
 import HTMLIcon from "./icons/HTML.svg?react";
 import CSSIcon from "./icons/CSS.svg?react";
 import PythonIcon from "./icons/Python.svg?react";
@@ -55,7 +57,7 @@ export default function Home() {
 
   return (
     <div
-      className="w-screen h-screen md:pl-[calc(var(--navbar-width)*1.5)] relative"
+      className="w-screen h-screen md:pl-[calc(var(--navbar-width)*1.5)] relative  z-10"
       key="home"
       id="home"
     >
@@ -74,17 +76,22 @@ export default function Home() {
             <span className="animate-pulse">|</span>
           </div>
         </div>
-        <div className="flex gap-x-1 ">
+        <div className="flex gap-2 flex-wrap">
           <JavaScriptIcon className="h-8 w-8 home-fill" />
-          <ReactIcon className="h-8 w-8 home-fill" />
+          <ReactIcon className="h-8 w-fit home-fill" />
           <TypeScriptIcon className="h-8 w-8 home-fill" />
-          <FigmaIcon className="h-8 w-8 home-stroke" />
-          <TailwindCSSIcon className="h-8 w-8 home-fill" />
+          <FigmaIcon className="h-8 w-fit home-stroke" />
+          <TailwindCSSIcon className="h-8 w-10 home-fill" />
+          <ExcelIcon className="h-8 w-8 home-fill" title="only ONLYOFFICE :D" />
           <GitIcon className="h-8 w-8 home-fill" />
-          <HTMLIcon className="h-8 w-8 home-fill" />
-          <CSSIcon className="h-8 w-8 home-fill" />
-          <CppIcon className="h-8 w-8 home-fill" />
-          <PythonIcon className="h-8 w-8 home-fill" />
+          <RIcon className="h-8 w-fit home-fill" />
+          <HTMLIcon className="h-8 w-fit home-fill" />
+          <CSSIcon
+            className="h-8 w-fit home-fill"
+            title="I dunno center a div"
+          />
+          <CppIcon className="h-8 w-fit home-fill" title="What is a pointer?" />
+          <PythonIcon className="h-8 w-8 home-fill" title="Where types?" />
         </div>
         <div
           className="text-xs px-1 py-[1px] rounded-sm border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:border-[var(--color-primary)]/75 hover:text-[var(--color-primary)]/75 tracking-widest cursor-pointer font-medium"

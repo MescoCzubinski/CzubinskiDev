@@ -11,7 +11,7 @@
 
 ## About me
 
-I'm Mieszko Czubinski, a Systems Engineering student at Wrocław University of Technology. I'm also an active programmer (Frontend), project manager, and co-president of the WMS_DEV scientific club at this university.
+I'm Mieszko Czubinski, a Systems Engineering student at Wrocław University of Technology. I'm also an active programmer (Frontend), Project Manager and co-president of the WMS_DEV scientific club at this university.
 
 ## Demo
 
@@ -51,7 +51,6 @@ src/
 │   │   ├── icons/
 │   │   ├── views/
 │   │   └── PortfolioCard.tsx
-│   └── TextContainer.tsx
 ├── locales/
 │   ├── en.json
 │   └── pl.json

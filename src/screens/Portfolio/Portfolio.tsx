@@ -8,10 +8,8 @@ export default function Portfolio() {
     <PortfolioCard
       id="KalkulacjaStraczkowe"
       name={t("kalkulacja-straczkowe-title")}
-      description={[
-        t("kalkulacja-straczkowe-description-1"),
-        t("kalkulacja-straczkowe-description-2"),
-      ]}
+      description={t("kalkulacja-straczkowe-description")}
+      click={t("kalkulacja-straczkowe-click")}
       backgroundColor="var(--color-topagrar)"
       textColor="var(--color-white)"
       organisationName="TopAgrar"
@@ -19,12 +17,21 @@ export default function Portfolio() {
       goLiveLink="https://www.topagrar.pl/kalkulatory/jak-policzyc-oplacalnosc-uprawy-straczkowych-2529371"
     />,
     <PortfolioCard
+      id="WMS_DEV"
+      name={t("wms-dev-title")}
+      description={t("wms-dev-description")}
+      click={t("wms-dev-click")}
+      backgroundColor="var(--color-white)"
+      textColor="var(--color-background)"
+      organisationName="WMS_DEV"
+      ghLink="https://github.com/WMS-DEV/homepage"
+      goLiveLink="https://wmsdev.pl/"
+    />,
+    <PortfolioCard
       id="PorownywarkaOdmian"
       name={t("porownywarka-odmian-title")}
-      description={[
-        t("porownywarka-odmian-description-1"),
-        t("porownywarka-odmian-description-2"),
-      ]}
+      description={t("porownywarka-odmian-description")}
+      click={t("porownywarka-odmian-click")}
       backgroundColor="var(--color-topagrar)"
       textColor="var(--color-white)"
       organisationName="TopAgrar"
@@ -34,10 +41,8 @@ export default function Portfolio() {
     <PortfolioCard
       id="KalkulatorRozpylaczy"
       name={t("kalkulator-rozpylaczy-title")}
-      description={[
-        t("kalkulator-rozpylaczy-description-1"),
-        t("kalkulator-rozpylaczy-description-2"),
-      ]}
+      description={t("kalkulator-rozpylaczy-description")}
+      click={t("kalkulator-rozpylaczy-click")}
       backgroundColor="var(--color-topagrar)"
       textColor="var(--color-white)"
       organisationName="TopAgrar"
@@ -45,19 +50,10 @@ export default function Portfolio() {
       goLiveLink="https://www.topagrar.pl/kalkulatory/jak-dobrac-rozpylacz-i-parametry-opryskiwacza-2531836"
     />,
     <PortfolioCard
-      id="WMS_DEV"
-      name={t("wms-dev-title")}
-      description={[t("wms-dev-description-1"), t("wms-dev-description-2")]}
-      backgroundColor="var(--color-white)"
-      textColor="var(--color-background)"
-      organisationName="WMS_DEV"
-      ghLink="https://github.com/WMS-DEV/homepage"
-      goLiveLink="https://wmsdev.pl/"
-    />,
-    <PortfolioCard
       id="arvalis"
       name={t("arvalis-title")}
-      description={[t("arvalis-description-1"), t("arvalis-description-2")]}
+      description={t("arvalis-description")}
+      click={t("arvalis-click")}
       backgroundColor="var(--color-arvalis)"
       textColor="var(--color-white)"
       organisationName="Arvalis"
@@ -76,14 +72,14 @@ export default function Portfolio() {
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedIndex((prevIndex) => (prevIndex + 1) % segments.length);
-    }, 15000);
+    }, 100000);
 
     return () => clearInterval(interval);
   }, [selectedIndex]);
 
   return (
     <div
-      className="w-screen h-screen bg-[var(--color-background)] pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center items-center"
+      className="w-screen h-screen pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center items-center z-10"
       key="portfolio"
       id="portfolio"
     >
@@ -93,6 +89,16 @@ export default function Portfolio() {
             className="h-full w-full transition-all duration-900 ease-in-out"
             style={{
               transform: `translateY(-${selectedIndex * 100}%)`,
+            }}
+            onWheel={(event) => {
+              event.stopPropagation();
+              if (event.deltaY < 0) {
+                setSelectedIndex(
+                  (prev) => (prev - 1 + segments.length) % segments.length
+                );
+              } else if (event.deltaY > 0) {
+                setSelectedIndex((prev) => (prev + 1) % segments.length);
+              }
             }}
           >
             {segments.map((Segment, index) => (
@@ -107,7 +113,7 @@ export default function Portfolio() {
           {segments.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full transition-all duration-450 ease-in-out cursor-pointer hover:bg-[var(--color-primary)] ${
+              className={`w-3 h-3 border-[1.25px] border-[var(--color-white)] rounded-full transition-all duration-450 ease-in-out cursor-pointer hover:bg-[var(--color-primary)] ${
                 index === selectedIndex
                   ? "bg-[var(--color-white)]"
                   : "bg-[var(--color-detail)]"

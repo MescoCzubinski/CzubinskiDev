@@ -13,7 +13,6 @@ import i18next from "../../i18next";
 export default function Navigation() {
   const [isCopied, setIsCopied] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const [, setLanguage] = useState(i18next.language);
   const copyTexts = [
     "Copied!",
     "Double copy!",
@@ -42,8 +41,12 @@ export default function Navigation() {
     }
   };
 
+  function setLanguage(language: string) {
+    i18next.changeLanguage(language);
+  }
+
   return (
-    <div className="fixed left-0 z-50 w-full h-[var(--navbar-width)] md:h-screen md:w-[var(--navbar-width)] bg-[var(--color-detail)]">
+    <div className="fixed left-0 z-20 w-full h-[var(--navbar-width)] md:h-screen md:w-[var(--navbar-width)] bg-[var(--color-detail)]">
       <div className="flex h-full md:flex-col items-center">
         <div className="ml-[calc(var(--navbar-width)/2-10px)] md:mt-[calc(var(--navbar-width)/2-10px)] md:ml-0">
           <GearIcon
@@ -58,7 +61,6 @@ export default function Navigation() {
             <div
               onClick={() => {
                 setLanguage("pl");
-                window.location.href = "/pl";
               }}
               className="text-[var(--color-white)] hover:text-[var(--color-primary)] cursor-pointer text-lg transition"
             >
@@ -67,7 +69,6 @@ export default function Navigation() {
             <div
               onClick={() => {
                 setLanguage("en");
-                window.location.href = "/en";
               }}
               className="text-[var(--color-white)] hover:text-[var(--color-primary)] cursor-pointer text-lg transition"
             >
@@ -85,7 +86,7 @@ export default function Navigation() {
               }}
             >
               <HomeIcon
-                className="nav-fill w-7 h-7 cursor-pointer"
+                className="nav-fill w-6 h-6 cursor-pointer"
                 id="home-icon"
               />
             </div>
@@ -96,7 +97,7 @@ export default function Navigation() {
               }}
             >
               <About
-                className="nav-fill w-7 h-7 cursor-pointer"
+                className="nav-fill w-6 h-6 cursor-pointer"
                 id="about-icon"
               />
             </div>
@@ -107,7 +108,7 @@ export default function Navigation() {
               }}
             >
               <PortfolioIcon
-                className="nav-stroke w-7 h-7 cursor-pointer"
+                className="nav-stroke w-6 h-6 cursor-pointer"
                 id="portfolio-icon"
               />
             </div>
@@ -127,7 +128,7 @@ export default function Navigation() {
               }
               className="cursor-pointer transition"
             >
-              <GithubIcon className="nav-fill w-7 h-7" />
+              <GithubIcon className="nav-fill w-6 h-6" />
             </div>
             <div
               title="LinkedIn"
@@ -140,16 +141,16 @@ export default function Navigation() {
               }
               className="cursor-pointer transition"
             >
-              <LinkedinIcon className="nav-fill w-7 h-7" />
+              <LinkedinIcon className="nav-fill w-6 h-6" />
             </div>
             <div
               title="Email"
               className="cursor-pointer relative transition"
               onClick={() => copyEmail()}
             >
-              <EmailIcon className="nav-stroke w-7 h-7" />
+              <EmailIcon className="nav-stroke w-6 h-6" />
               {isCopied && (
-                <span className="absolute left-[var(--navbar-width)] top-[2px] text-[var(--color-primary)] text-nowrap">
+                <span className="absolute left-[var(--navbar-width)] top-[1px] text-[var(--color-primary)] text-nowrap">
                   {copyText}
                 </span>
               )}

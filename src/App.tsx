@@ -4,10 +4,12 @@ import Home from "./screens/Home/Home";
 import About from "./screens/About/About";
 import Portfolio from "./screens/Portfolio/Portfolio";
 import { useEffect } from "react";
+import { changeLanguage } from "i18next";
 function App() {
   useEffect(() => {
-    let selectedElement = window.location.pathname.replace("/", "");
+    let selectedElement = window.location.pathname.split("/")[1];
     if (selectedElement === "arvalis") {
+      changeLanguage("en");
       selectedElement = "portfolio";
     }
 

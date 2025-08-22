@@ -1,24 +1,29 @@
 {
   "about-title": "O mnie",
-  "about-description-1": "Uwielbiam tworzyć. Niezależnie od tego jako kto, Developer czy Project Manager. Na piewszym miejscu stawiam ludzi i interakcje między nimi, najlepsze projekty powstają, gdy pracujemy razem.",
-  "about-description-2": "Gdy koduję, robię to krok po kroku, od jednej wersji do drugiej. Just like in Scrum methodology. Jestem też studentem Inżynierii Systemów na <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class=' italic'>Politechnice Wrocławskiej</a>.",
-  "about-description-3": "Poza IT interesuje się historią, czytam książki fantasy i political fiction, gram w strategie i RPGi od <a href='https://cdprojektred.com/' target='_blank' rel='noopener noreferrer' class=' italic'>CD Projekt Red</a>.",
+  "about-description-1": "Uwielbiam tworzyć. Niezależnie od tego czy jako programista czy Project Manager. Uwielbiam pracę zespołową, najlepsze projekty powstają, gdy pracujemy razem.",
+  "about-description-2": "Jestem studentem Inżynierii Systemów na <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>Politechnice Wrocławskiej</a>.",
+  "about-description-3": "Poza IT interesuje się historią, czytam książki fantasy i political fiction, gram w strategie i RPGi od <a href='https://cdprojektred.com/' target='_blank' rel='noopener noreferrer' class='underline'>CD Projekt Red</a>.",
   "wmsdev-title": "WMS_DEV",
-  "wmsdev-description-1": "Aktywny programista, Project Manager i współprezes Koła Naukowego  <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class=' italic'>WMS_DEV</a> na <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class=' italic'>Politechnice Wrocławskiej</a>",
-  "wmsdev-description-2": "Tworzymy aplikacje webowe dla studentów. Wszystko w najnowszych technologiach, w metodyce Scrum.",
+  "wmsdev-description": "Aktywny programista, Project Manager i współprezes Koła Naukowego  <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='underline'>WMS_DEV</a> na <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>Politechnice Wrocławskiej</a>",
+  "wmsdev-click": "Tworzymy aplikacje webowe dla studentów. Wszystko w najnowszych technologiach, w metodyce Scrum.",
+
   "kalkulacja-straczkowe-title": "Kalkulacja opłacalności uprawy",
-  "kalkulacja-straczkowe-description-1": "Umożliwia proste oszacowanie kosztów uprawy roślin strączkowych oraz potencjalnych zysków.  Stworzone dla <a href='https://www.topagrar.pl/' target='_blank' rel='noopener noreferrer' class=' italic'>topagrar.pl</a>.",
-  "kalkulacja-straczkowe-description-2": "Kliknij w ikonki by zobaczyć jak działa lub zajrzeć do kodu.",
-  "porownywarka-odmian-title": "Porównywarka odmian",
-  "porownywarka-odmian-description-1": "Używając jej można porównać odmiany roślin wielu gatunków. Stworzone dla <a href='https://www.topagrar.pl/' target='_blank' rel='noopener noreferrer' class=' italic'>topagrar.pl</a> na podstawie danych <a href='https://coboru.gov.pl/' target='_blank' rel='noopener noreferrer' class=' italic'>COBORU</a>.",
-  "porownywarka-odmian-description-2": "Możesz zobaczyć jak działa klikając w ikonki lub zajrzeć do kodu.",
-  "kalkulator-rozpylaczy-title": "Kalkulator doboru rozpylaczy",
-  "kalkulator-rozpylaczy-description-1": "Pozwala wybrać odpowiedni rozmiar (kolor) rozpylacza oraz, na jego podstawie obliczyć ciśnienie, dawkę lub prędkość opryskiwacza. Stworzone dla <a href='https://www.topagrar.pl/' target='_blank' rel='noopener noreferrer' class=' italic'>topagrar.pl</a>.",
-  "kalkulator-rozpylaczy-description-2": "Klikając niżej możesz zobaczyć działanie lub kod aplikacji.",
+  "kalkulacja-straczkowe-description": "Profesjonalni przedsiębiorcy rolni prowadzą kalkulacje planowanych upraw. Wymagają one uwzględnienia wszystkich przychodów i kosztów. Kalkulator ten pozwala w intuicyjny sposób przeprowadzić obliczenia. Stworzone dla portalu <a href='https://www.topagrar.pl/' target='_blank' rel='noopener noreferrer' class='underline'>topagrar.pl</a>.",
+  "kalkulacja-straczkowe-click": "Kliknij niżej aby zobaczyć aplikację lub zajrzeć do kodu.",
+
   "wms-dev-title": "WMS_DEV_homepage",
-  "wms-dev-description-1": "Storna główna koła naukowego <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class=' italic'>WMS_DEV</a> działającego przy <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class=' italic'>Politechnice Wrocławskiej</a>.",
-  "wms-dev-description-2": "Zajrzyj do kodu stworzonego przez epickich developerów z <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class=' italic'>WMS_DEV</a>. Byłem Project Managerem oraz Frontend Developerem tego projektu.",
-  "arvalis-title": "Coming soon",
-  "arvalis-description-1": "Demonstrator technologii dla <a href='https://arvalis.pl/' target='_blank' rel='noopener noreferrer' class=' italic'>Arvalis</a>. Stworzony na podstawie tabeli z <a href='https://www.arvalis.fr/infos-techniques/ble-et-orge-dhiver-evaluer-le-risque-de-verse-avant-dintervenir' target='_blank' rel='noopener noreferrer' class=' italic'>www.arvalis.fr</a>.",
-  "arvalis-description-2": ""
+  "wms-dev-description": "Storna główna koła naukowego <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='underline'>WMS_DEV</a> działającego przy mojej uczelni — <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>Politechnice Wrocławskiej</a>. Jest to projekt zespołowy, w którym pełnię rolę Project Managera oraz Frontend Developera.",
+  "wms-dev-click": "Zajrzyj do kodu stworzonego przez zespół epickich developerów z <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='underline'>WMS_DEV</a>.",
+
+  "porownywarka-odmian-title": "Porównywarka odmian",
+  "porownywarka-odmian-description": "Sukces biznesowy uprawy roślin zależy od trafnego wyboru odmiany. Aplikacja ta pomaga w interpretowaniu dużych, publicznych baz danych (</a>źródło: <a href='https://coboru.gov.pl/' target='_blank' rel='noopener noreferrer' class='underline'>COBORU</a>). Pozwala łatwo sortować i porównać dane, łatwiej niż w Excelu.",
+  "porownywarka-odmian-click": "Możesz zobaczyć kod lub działanie aplikacji klikając w niżej.",
+
+  "kalkulator-rozpylaczy-title": "Kalkulator doboru rozpylaczy",
+  "kalkulator-rozpylaczy-description": "Zabieg ochrony roślin wymaga doboru ciśnienia, prędkości i dawki cieczy. Jego wynikiem jest konkretny typ rozpylacza (wymienna część maszyny opisana liczbą i kolorem). Narzędzie to podpowiada, który rozpylacz wybrać i jak ustawić parametry pracy.",
+  "kalkulator-rozpylaczy-click": "Klikając niżej możesz zobaczyć działanie lub kod aplikacji.",
+
+  "arvalis-title": "Nadchodzące...",
+  "arvalis-description": "Demonstrator technologii dla <a href='https://arvalis.fr/' target='_blank' rel='noopener noreferrer' class='underline'>Instytutu Arvalis</a>. Stworzony na podstawie tabeli ze strony <a href='https://www.arvalis.fr/infos-techniques/ble-et-orge-dhiver-evaluer-le-risque-de-verse-avant-dintervenir' target='_blank' rel='noopener noreferrer' class='underline'>www.arvalis.fr</a>. Umożliwia szybkie szacowanie ryzyka wylegania pszenicy w zależności od gleby, odmiany, nawożenia azotowego oraz ilości biomasy pod koniec krzewienia.",
+  "arvalis-click": "Kliknij niżej aby zobaczyć działanie lub kod aplikacji."
 }

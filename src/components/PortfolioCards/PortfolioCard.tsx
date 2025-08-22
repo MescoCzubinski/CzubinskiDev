@@ -1,5 +1,4 @@
 import Code from "./icons/Code.svg?react";
-import GoLive from "./icons/GoLive.svg?react";
 import TopAgrarPlIcon from "./icons/TopAgrarPl.svg?react";
 import ArvalisIcon from "./icons/Arvalis.svg?react";
 import WMS_DEVIcon from "./icons/WMS_DEV.svg?react";
@@ -13,6 +12,7 @@ export default function PortfolioCard({
   id,
   name,
   description,
+  click,
   backgroundColor,
   textColor,
   organisationName,
@@ -21,7 +21,8 @@ export default function PortfolioCard({
 }: {
   id?: string;
   name?: string;
-  description?: string[];
+  description?: string;
+  click?: string;
   backgroundColor: string;
   textColor: string;
   organisationName?: string;
@@ -30,25 +31,25 @@ export default function PortfolioCard({
 }) {
   return (
     <div
-      className="w-full h-full flex justify-around p-8 gap-x-8"
+      className="w-full h-full flex justify-around p-5 gap-x-5"
       id={id}
       style={{ backgroundColor: backgroundColor }}
     >
       <div
-        className="flex flex-col max-w-1/2 justify-center gap-y-4"
+        className="flex flex-col max-w-1/2 justify-around gap-y-4"
         style={{ color: textColor }}
       >
-        <div className="text-2xl font-bold">{name}</div>
-        <div className="text-xl flex flex-col gap-y-2 text-justify">
-          {description?.map((paragraph, index) => (
-            <div key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
-          ))}
-        </div>
+        <div className="text-2xl font-bold test">{name}</div>
+        <div
+          className="text-lg"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
+        <div className="text-lg" dangerouslySetInnerHTML={{ __html: click }} />
         <div className="flex w-full h-fit items-center justify-between">
           <div>
             {organisationName === "TopAgrar" && (
               <TopAgrarPlIcon
-                className="h-16 w-fit"
+                className="h-14 w-fit"
                 onClick={() =>
                   window.open(goLiveLink, "_blank", "noopener,noreferrer")
                 }
@@ -56,7 +57,7 @@ export default function PortfolioCard({
             )}
             {organisationName === "WMS_DEV" && (
               <WMS_DEVIcon
-                className="h-12 w-fit"
+                className="h-10 w-fit"
                 onClick={() =>
                   window.open(
                     "https://www.wmsdev.pl/",
@@ -68,7 +69,7 @@ export default function PortfolioCard({
             )}
             {organisationName === "Arvalis" && (
               <ArvalisIcon
-                className="h-10 w-fit"
+                className="h-8 w-fit"
                 onClick={() =>
                   window.open(
                     "https://www.arvalis.fr/",
