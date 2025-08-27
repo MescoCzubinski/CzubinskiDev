@@ -79,7 +79,7 @@ export default function Portfolio() {
 
   return (
     <div
-      className="w-screen h-screen pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center items-center z-10"
+      className="w-screen md:h-screen pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center items-center z-10"
       key="portfolio"
       id="portfolio"
     >

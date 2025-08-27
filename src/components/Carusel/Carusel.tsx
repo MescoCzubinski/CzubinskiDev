@@ -34,9 +34,9 @@ export default function Carusel({ children }: { children: React.ReactNode }) {
   return (
     <div
       ref={carouselRef}
-      className="w-screen h-screen overflow-x-auto overflow-y-hidden hide-scrollbar snap-x snap-mandatory"
+      className="w-screen h-screen md:overflow-x-auto md:overflow-y-hidden hide-scrollbar snap-x snap-mandatory"
     >
-      <div className="w-[300vw] h-screen flex bg-[var(--color-background)] relative">
+      <div className="w-screen flex-col md:flex-row md:w-[300vw] md:h-screen flex bg-[var(--color-background)] relative">
         <img
           src="./background.webh"
           alt="Background"

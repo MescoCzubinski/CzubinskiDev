@@ -57,12 +57,12 @@ export default function Home() {
 
   return (
     <div
-      className="w-screen h-screen md:pl-[calc(var(--navbar-width)*1.5)] relative  z-10"
+      className="w-screen h-screen md:pl-[calc(var(--navbar-width)*1.5)] relative z-10"
       key="home"
       id="home"
     >
-      <div className="h-full flex flex-col items-start justify-center text-[var(--color-white)] pl-3 gap-y-6">
-        <div className="flex flex-col text-4xl font-bold tracking-wide text-shadow-primary">
+      <div className="h-full flex flex-col items-start justify-center text-[var(--color-white)] pl-3 gap-y-14 md:gap-y-6">
+        <div className="flex flex-col text-[2.8rem] md:text-4xl font-bold tracking-wide text-shadow-primary">
           <div>Hi,</div>
           <div>
             I'm{" "}
@@ -76,25 +76,34 @@ export default function Home() {
             <span className="animate-pulse">|</span>
           </div>
         </div>
-        <div className="flex gap-2 flex-wrap">
-          <JavaScriptIcon className="h-8 w-8 home-fill" />
-          <ReactIcon className="h-8 w-fit home-fill" />
-          <TypeScriptIcon className="h-8 w-8 home-fill" />
-          <FigmaIcon className="h-8 w-fit home-stroke" />
-          <TailwindCSSIcon className="h-8 w-10 home-fill" />
-          <ExcelIcon className="h-8 w-8 home-fill" title="only ONLYOFFICE :D" />
-          <GitIcon className="h-8 w-8 home-fill" />
-          <RIcon className="h-8 w-fit home-fill" />
-          <HTMLIcon className="h-8 w-fit home-fill" />
+        <div className="flex gap-3 md:gap-2 flex-wrap">
+          <JavaScriptIcon className="h-12 w-12 md:h-8 md:w-8 home-fill" />
+          <ReactIcon className="h-12 md:h-8 w-fit home-fill" />
+          <TypeScriptIcon className="h-12 md:h-8 w-12 md:w-8 home-fill" />
+          <FigmaIcon className="h-12 md:h-8 w-fit home-stroke" />
+          <TailwindCSSIcon className="h-12 md:h-8 w-11 md:w-10 home-fill" />
+          <ExcelIcon
+            className="h-12 md:h-8 w-12 md:w-8 home-fill"
+            title="only ONLYOFFICE :D"
+          />
+          <GitIcon className="h-12 md:h-8 w-12 md:w-8 home-fill" />
+          <RIcon className="h-12 md:h-8 w-fit home-fill" />
+          <HTMLIcon className="h-12 md:h-8 w-fit home-fill" />
           <CSSIcon
-            className="h-8 w-fit home-fill"
+            className="h-12 md:h-8 w-fit home-fill"
             title="I dunno center a div"
           />
-          <CppIcon className="h-8 w-fit home-fill" title="What is a pointer?" />
-          <PythonIcon className="h-8 w-8 home-fill" title="Where types?" />
+          <CppIcon
+            className="h-12 md:h-8 w-fit home-fill"
+            title="What is a pointer?"
+          />
+          <PythonIcon
+            className="h-12 md:h-8 w-12 md:w-8 home-fill"
+            title="Where types?"
+          />
         </div>
         <div
-          className="text-xs px-1 py-[1px] rounded-sm border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:border-[var(--color-primary)]/75 hover:text-[var(--color-primary)]/75 tracking-widest cursor-pointer font-medium"
+          className="text-2xl md:text-xs px-2 py-1 md:px-1 md:py-[1px] rounded-sm border-3 md:border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:border-[var(--color-primary)]/75 hover:text-[var(--color-primary)]/75 tracking-widest cursor-pointer font-medium"
           onClick={() =>
             window.open(
               "https://www.linkedin.com/messaging/thread/new/?recipient=mieszko-czubinski",
