@@ -79,11 +79,11 @@ export default function Portfolio() {
 
   return (
     <div
-      className="w-screen md:h-screen pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center items-center z-10"
+      className="w-screen h-screen pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center items-center z-10"
       key="portfolio"
       id="portfolio"
     >
-      <div className="h-full w-7/10 xl:w-3/5 flex justify-center py-10 pl-2 gap-x-20 overflow-hidden">
+      <div className="h-full w-full md:w-7/10 xl:w-3/5 flex flex-col md:flex-row justify-center mx-2 md:mx-0 py-10 pl-2 pr-2 gap-y-12 md:gap-x-20 overflow-hidden">
         <div className="h-full w-full relative overflow-hidden rounded-md shadow-frame ">
           <div
             className="h-full w-full transition-all duration-900 ease-in-out"
@@ -109,7 +109,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="h-full w-4 justify-center flex flex-col gap-y-10">
+        <div className="h-4 w-full md:w-4 md:h-full items-center justify-center flex md:flex-col gap-10">
           {segments.map((_, index) => (
             <div
               key={index}

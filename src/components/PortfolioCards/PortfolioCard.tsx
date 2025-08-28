@@ -7,6 +7,8 @@ import KalkulatorRozpylaczyView from "./views/KalkulatorRozpylaczyView.svg?react
 import PorownywarkaOdmianView from "./views/PorownywarkaOdmianView.svg?react";
 import ArvalisView from "./views/arvalisView.svg?react";
 import WMS_DEVView from "./views/WMS_DEVView.svg?react";
+import ClickIcon from "./icons/Click.svg?react";
+import MagnifyingGlassIcon from "./icons/MagnifyingGlass.svg?react";
 
 export default function PortfolioCard({
   id,
@@ -31,20 +33,23 @@ export default function PortfolioCard({
 }) {
   return (
     <div
-      className="w-full h-full flex justify-around p-5 gap-x-5"
+      className="w-full h-full flex flex-col md:flex-row justify-around p-5 gap-x-5"
       id={id}
       style={{ backgroundColor: backgroundColor }}
     >
       <div
-        className="flex flex-col max-w-1/2 justify-around gap-y-4"
+        className="flex flex-col md:max-w-1/2 justify-around gap-y-4"
         style={{ color: textColor }}
       >
-        <div className="text-2xl font-bold test">{name}</div>
+        <div className="text-3xl md:text-3xl font-bold test">{name}</div>
         <div
-          className="text-lg"
+          className="text-xl md:text-lg"
           dangerouslySetInnerHTML={{ __html: description }}
         />
-        <div className="text-lg" dangerouslySetInnerHTML={{ __html: click }} />
+        <div
+          className="text-xl md:text-lg"
+          dangerouslySetInnerHTML={{ __html: click }}
+        />
         <div className="flex w-full h-fit items-center justify-between">
           <div>
             {organisationName === "TopAgrar" && (
@@ -94,22 +99,32 @@ export default function PortfolioCard({
         </div>
       </div>
       <div
-        className={`cursor-pointer w-fit max-w-1/2 h-full flex items-center`}
+        className={`cursor-pointer w-fit md:max-w-1/2 h-full flex items-start md:items-center relative overflow-hidden`}
         onClick={() => {
           window.open(goLiveLink, "_blank", "noopener,noreferrer");
         }}
       >
         {id === "KalkulacjaStraczkowe" && (
-          <KalkulacjaStraczkoweView className="h-full w-fit" />
+          <KalkulacjaStraczkoweView className="w-full md:h-full md:w-fit" />
         )}
         {id === "PorownywarkaOdmian" && (
-          <PorownywarkaOdmianView className="h-full w-fit" />
+          <PorownywarkaOdmianView className="w-full md:h-full md:w-fit" />
         )}
         {id === "KalkulatorRozpylaczy" && (
-          <KalkulatorRozpylaczyView className="h-full w-fit" />
+          <KalkulatorRozpylaczyView className="w-full md:h-full md:w-fit" />
         )}
-        {id === "WMS_DEV" && <WMS_DEVView className="h-full w-fit" />}
-        {id === "arvalis" && <ArvalisView className="h-full w-fit" />}
+        {id === "WMS_DEV" && (
+          <WMS_DEVView className="w-full md:h-full md:w-fit" />
+        )}
+        {id === "arvalis" && (
+          <ArvalisView className="w-full md:h-full md:w-fit" />
+        )}
+        <div className="hidden md:block absolute w-fit h-fit top-4 right-4">
+          <ClickIcon className="w-14 h-14" />
+        </div>
+        <div className="md:hidden absolute w-fit h-fit top-0 right-0">
+          <MagnifyingGlassIcon className="w-14 h-14" />
+        </div>
       </div>
     </div>
   );

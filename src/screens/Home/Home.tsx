@@ -76,7 +76,7 @@ export default function Home() {
             <span className="animate-pulse">|</span>
           </div>
         </div>
-        <div className="flex gap-3 md:gap-2 flex-wrap">
+        <div className="flex gap-3 md:gap-2 flex-wrap pr-3">
           <JavaScriptIcon className="h-12 w-12 md:h-8 md:w-8 home-fill" />
           <ReactIcon className="h-12 md:h-8 w-fit home-fill" />
           <TypeScriptIcon className="h-12 md:h-8 w-12 md:w-8 home-fill" />

@@ -7,7 +7,7 @@ export default function About() {
   const { t } = useTranslation();
   return (
     <div
-      className="w-screen h-screen pt-[calc(var(--navbar-width)*1)] md:pt-0 flex justify-center relative z-10 border-b-2 border-[var(--color-detail)] md:border-0"
+      className="w-screen h-screen pt-[calc(var(--navbar-width)*2)] md:pt-0 flex justify-center relative z-10 border-b-2 border-[var(--color-detail)] md:border-0"
       key="about"
       id="about"
     >
@@ -16,7 +16,7 @@ export default function About() {
           <div className="text-3xl font-bold tracking-wide text-shadow-primary">
             {t("about-title")}
           </div>
-          <div className="flex text-xl md:text-lg flex-col gap-y-6">
+          <div className="flex text-xl md:text-lg flex-col gap-y-3">
             {[
               t("about-description-1"),
               t("about-description-2"),
@@ -38,7 +38,7 @@ export default function About() {
               <div className="text-3xl font-bold tracking-wide text-shadow-primary">
                 {t("wmsdev-title")}
               </div>
-              <div className="flex text-xl md:text-lg flex-col gap-y-6">
+              <div className="flex text-xl md:text-lg flex-col gap-y-3">
                 {[t("wmsdev-description-1"), t("wmsdev-description-2")].map(
                   (paragraph, index) => (
                     <div
