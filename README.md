@@ -65,6 +65,8 @@ src/
 │   └── Portfolio/
 │       └── Portfolio.tsx
 ├── App.tsx
+├── cursor.ts
+├── i18next.ts
 ├── index.css
 ├── main.tsx
 ├── shadow.css

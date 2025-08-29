@@ -1,7 +1,7 @@
-import MyPhoto from "./icons/MyPhoto.svg?react";
-import RubberDuck from "./icons/RubberDuck.svg?react";
 import { useTranslation } from "react-i18next";
 import "./duck-animation.css";
+import MyPhoto from "./icons/MyPhoto.svg?react";
+import RubberDuck from "./icons/RubberDuck.svg?react";
 
 export default function About() {
   const { t } = useTranslation();
@@ -12,11 +12,11 @@ export default function About() {
       id="about"
     >
       <div className="h-full w-full md:w-3/5 flex items-center  flex-col md:flex-row  px-5 py-5 md:py-10 gap-x-10 text-[var(--color-white)">
-        <div className="h-full w-full flex flex-col gap-y-5 text-[var(--color-white)]">
-          <div className="text-3xl font-bold tracking-wide text-shadow-primary">
+        <div className="h-full w-full flex flex-col gap-y-5 2xl:gap-y-7 text-[var(--color-white)]">
+          <div className="text-3xl 2xl:text-5xl font-bold tracking-wide text-shadow-primary">
             {t("about-title")}
           </div>
-          <div className="flex text-xl md:text-lg flex-col gap-y-3">
+          <div className="flex text-xl md:text-lg 2xl:text-2xl flex-col gap-y-3 2xl:gap-y-5">
             {[
               t("about-description-1"),
               t("about-description-2"),
@@ -29,16 +29,16 @@ export default function About() {
             ))}
           </div>
         </div>
-        <div className="h-full w-full flex md:flex-col gap-y-5 mt-10 md:mt-0">
+        <div className="h-full w-full flex md:flex-col gap-y-5 2xl:gap-y-7 mt-10 md:mt-0">
           <div className=" w-full hidden md:flex items-center">
             <MyPhoto className="w-fit cursor-pointer rounded-md shadow-frame" />
           </div>
           <div className="h-full w-full">
-            <div className="h-full w-full flex flex-col gap-y-5 text-[var(--color-white)]">
-              <div className="text-3xl font-bold tracking-wide text-shadow-primary">
+            <div className="h-full w-full flex flex-col gap-y-5 2xl:gap-y-7 text-[var(--color-white)]">
+              <div className="text-3xl 2xl:text-5xl font-bold tracking-wide text-shadow-primary">
                 {t("wmsdev-title")}
               </div>
-              <div className="flex text-xl md:text-lg flex-col gap-y-3">
+              <div className="flex text-xl md:text-lg 2xl:text-2xl flex-col gap-y-3 2xl:gap-y-5">
                 {[t("wmsdev-description-1"), t("wmsdev-description-2")].map(
                   (paragraph, index) => (
                     <div

@@ -40,7 +40,12 @@ export default function Carusel({ children }: { children: React.ReactNode }) {
         <img
           src="./background.webh"
           alt="Background"
-          className="w-[300vw] h-screen object-cover absolute top-0 left-0"
+          className="w-[300vw] h-screen object-cover absolute top-0 left-0 hidden md:block"
+        />
+        <img
+          src="./background_mobile.webh"
+          alt="Background"
+          className="h-full w-screen object-cover absolute top-0 left-0 md:hidden"
         />
         {children}
       </div>

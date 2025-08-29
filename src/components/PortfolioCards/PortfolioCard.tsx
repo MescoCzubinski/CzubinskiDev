@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Code from "./icons/Code.svg?react";
 import TopAgrarPlIcon from "./icons/TopAgrarPl.svg?react";
 import ArvalisIcon from "./icons/Arvalis.svg?react";
@@ -7,8 +8,6 @@ import KalkulatorRozpylaczyView from "./views/KalkulatorRozpylaczyView.svg?react
 import PorownywarkaOdmianView from "./views/PorownywarkaOdmianView.svg?react";
 import ArvalisView from "./views/arvalisView.svg?react";
 import WMS_DEVView from "./views/WMS_DEVView.svg?react";
-import ClickIcon from "./icons/Click.svg?react";
-import MagnifyingGlassIcon from "./icons/MagnifyingGlass.svg?react";
 
 export default function PortfolioCard({
   id,
@@ -18,6 +17,7 @@ export default function PortfolioCard({
   backgroundColor,
   textColor,
   organisationName,
+  showCode,
   ghLink,
   goLiveLink,
 }: {
@@ -28,29 +28,35 @@ export default function PortfolioCard({
   backgroundColor: string;
   textColor: string;
   organisationName?: string;
+  showCode: boolean;
   ghLink?: string;
   goLiveLink?: string;
 }) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className="w-full h-full flex flex-col md:flex-row justify-around p-5 gap-x-5"
+      className="w-full h-full flex flex-col md:flex-row p-5 gap-x-5 relative"
       id={id}
       style={{ backgroundColor: backgroundColor }}
     >
       <div
-        className="flex flex-col md:max-w-1/2 justify-around gap-y-4"
+        className="flex flex-col md:w-1/2 justify-around gap-y-6 md:gap-y-4"
         style={{ color: textColor }}
       >
-        <div className="text-3xl md:text-3xl font-bold test">{name}</div>
+        <div className="text-3xl 2xl:text-5xl font-bold test">{name}</div>
         <div
-          className="text-xl md:text-lg"
-          dangerouslySetInnerHTML={{ __html: description }}
+          className="text-xl md:text-lg 2xl:text-2xl"
+          dangerouslySetInnerHTML={{ __html: description ?? "" }}
         />
         <div
-          className="text-xl md:text-lg"
-          dangerouslySetInnerHTML={{ __html: click }}
+          className="text-xl md:text-lg 2xl:text-2xl"
+          dangerouslySetInnerHTML={{ __html: click ?? "" }}
         />
-        <div className="flex w-full h-fit items-center justify-between">
+        <div
+          className={`flex w-full h-fit items-center ${
+            showCode ? " justify-between" : "justify-around"
+          }`}
+        >
           <div>
             {organisationName === "TopAgrar" && (
               <TopAgrarPlIcon
@@ -85,46 +91,49 @@ export default function PortfolioCard({
               />
             )}
           </div>
-          <div
-            className="cursor-pointer"
-            onClick={() => window.open(ghLink, "_blank", "noopener,noreferrer")}
-            title="Click to view the code"
-          >
-            <Code
-              className={
-                textColor === "var(--color-white)" ? "w-10 white" : "w-10 dark"
+          {showCode && (
+            <div
+              className="cursor-pointer"
+              onClick={() =>
+                window.open(ghLink, "_blank", "noopener,noreferrer")
               }
-            />
-          </div>
+              title="Click to view the code"
+            >
+              <Code
+                className={
+                  textColor === "var(--color-white)"
+                    ? "w-10 white"
+                    : "w-10 dark"
+                }
+              />
+            </div>
+          )}
         </div>
       </div>
       <div
-        className={`cursor-pointer w-fit md:max-w-1/2 h-full flex items-start md:items-center relative overflow-hidden`}
+        className={`cursor-pointer absolute -bottom-90 md:bottom-0 md:top-0 right-0 p-5 md:h-full md:max-w-1/2 transition ${
+          isOpen ? "bottom-0" : ""
+        }`}
         onClick={() => {
-          window.open(goLiveLink, "_blank", "noopener,noreferrer");
+          if (isOpen) {
+            window.open(goLiveLink, "_blank", "noopener,noreferrer");
+            setIsOpen(false);
+          } else {
+            setIsOpen(true);
+          }
         }}
       >
         {id === "KalkulacjaStraczkowe" && (
-          <KalkulacjaStraczkoweView className="w-full md:h-full md:w-fit" />
+          <KalkulacjaStraczkoweView className="w-full h-fit md:h-full" />
         )}
         {id === "PorownywarkaOdmian" && (
-          <PorownywarkaOdmianView className="w-full md:h-full md:w-fit" />
+          <PorownywarkaOdmianView className="w-full h-fit md:h-full" />
         )}
         {id === "KalkulatorRozpylaczy" && (
-          <KalkulatorRozpylaczyView className="w-full md:h-full md:w-fit" />
+          <KalkulatorRozpylaczyView className="w-full h-fit md:h-full" />
         )}
-        {id === "WMS_DEV" && (
-          <WMS_DEVView className="w-full md:h-full md:w-fit" />
-        )}
-        {id === "arvalis" && (
-          <ArvalisView className="w-full md:h-full md:w-fit" />
-        )}
-        <div className="hidden md:block absolute w-fit h-fit top-4 right-4">
-          <ClickIcon className="w-14 h-14" />
-        </div>
-        <div className="md:hidden absolute w-fit h-fit top-0 right-0">
-          <MagnifyingGlassIcon className="w-14 h-14" />
-        </div>
+        {id === "WMS_DEV" && <WMS_DEVView className="w-full h-fit md:h-full" />}
+        {id === "arvalis" && <ArvalisView className="w-full h-fit md:h-full" />}
       </div>
     </div>
   );

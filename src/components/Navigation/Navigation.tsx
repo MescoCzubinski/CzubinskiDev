@@ -1,3 +1,5 @@
+import { useState } from "react";
+import i18next from "../../i18next";
 import GearIcon from "./icons/gear.svg?react";
 import InfoIcon from "./icons/info.svg?react";
 import HomeIcon from "./icons/home.svg?react";
@@ -7,8 +9,6 @@ import PortfolioIcon from "./icons/portfolio.svg?react";
 import GithubIcon from "./icons/github.svg?react";
 import LinkedinIcon from "./icons/linkedin.svg?react";
 import EmailIcon from "./icons/email.svg?react";
-import { useState } from "react";
-import i18next from "../../i18next";
 
 export default function Navigation() {
   const [isCopied, setIsCopied] = useState(false);

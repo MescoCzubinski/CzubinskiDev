@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import JavaScriptIcon from "./icons/JavaScript.svg?react";
 import TypeScriptIcon from "./icons/TypeScript.svg?react";
 import ReactIcon from "./icons/React.svg?react";
@@ -10,8 +11,6 @@ import HTMLIcon from "./icons/HTML.svg?react";
 import CSSIcon from "./icons/CSS.svg?react";
 import PythonIcon from "./icons/Python.svg?react";
 import CppIcon from "./icons/Cpp.svg?react";
-
-import { useState, useEffect } from "react";
 
 const positions = ["Developer.", "Project Manager.", "Frontend Developer."];
 
@@ -116,7 +115,7 @@ export default function Home() {
           CONTACT ME
         </div>
       </div>
-      <div className="absolute top-0 -right-13 text-[150px] rotate-[45deg] font-detail hidden md:block text-[var(--color-white)] font-bold tracking-wider">
+      <div className="absolute top-0 -right-13 text-[150px] 2xl:text-[230px] rotate-[45deg] font-detail hidden md:block text-[var(--color-white)] font-bold tracking-wider">
         <div className="pl-44 text-[var(--color-primary)] text-shadow-white-xl">
           Mieszko
         </div>
