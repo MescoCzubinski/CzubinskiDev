@@ -37,43 +37,6 @@ npm run dev
 npm run build
 ```
 
-## Project structure
-
-```bash
-src/
-├── components/
-│   ├── Carousel/
-│   │   └── Carousel.tsx
-│   ├── Navigation/
-│   │   ├── icons/
-│   │   └── Navigation.tsx
-│   ├── PortfolioCards/
-│   │   ├── icons/
-│   │   ├── views/
-│   │   └── PortfolioCard.tsx
-├── locales/
-│   ├── en.json
-│   └── pl.json
-├── screens/
-│   ├── About/
-│   │   ├── icons/
-│   │   ├── About.tsx
-│   │   └── duck-animation.css
-│   ├── Home/
-│   │   ├── icons/
-│   │   └── Home.tsx
-│   └── Portfolio/
-│       └── Portfolio.tsx
-├── App.tsx
-├── cursor.ts
-├── i18next.ts
-├── index.css
-├── main.tsx
-├── shadow.css
-├── svg.css
-├── vite-env.d.ts
-```
-
 ## Contact
 
 - [Click and check this webpage](https://czubinski.dev)

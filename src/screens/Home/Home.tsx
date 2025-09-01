@@ -56,24 +56,22 @@ export default function Home() {
 
   return (
     <div
-      className="w-screen h-screen md:pl-[calc(var(--navbar-width)*1.5)] relative z-10"
+      className="w-screen h-screen md:pl-[calc(var(--navbar-width)*1.5)] z-10"
       key="home"
       id="home"
     >
-      <div className="h-full flex flex-col items-start justify-center text-[var(--color-white)] pl-3 gap-y-14 md:gap-y-6">
-        <div className="flex flex-col text-[2.8rem] md:text-4xl font-bold tracking-wide text-shadow-primary">
-          <div>Hi,</div>
-          <div>
-            I'm{" "}
-            <span className="text-[var(--color-primary)] text-shadow-white">
-              Mieszko
-            </span>
-            ,
+      <div className="h-full flex flex-col items-start justify-center text-[var(--color-light)] pl-3 gap-y-14 md:gap-y-6">
+        <div className="flex flex-col gap-y-1">
+          <h2># Hi,</h2>
+          <div className="flex">
+            <h2 className="mr-3"># I'm </h2>
+            <h3>Mieszko</h3>
+            <h2>,</h2>
           </div>
-          <div>
-            {displayedPosition}
+          <h2>
+            {"# " + displayedPosition}
             <span className="animate-pulse">|</span>
-          </div>
+          </h2>
         </div>
         <div className="flex gap-3 md:gap-2 flex-wrap pr-3">
           <JavaScriptIcon className="h-12 w-12 md:h-8 md:w-8 home-fill" />
@@ -102,7 +100,7 @@ export default function Home() {
           />
         </div>
         <div
-          className="text-2xl md:text-xs px-2 py-1 md:px-1 md:py-[1px] rounded-sm border-3 md:border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:border-[var(--color-primary)]/75 hover:text-[var(--color-primary)]/75 tracking-widest cursor-pointer font-medium"
+          className="text-2xl md:text-sm px-2 py-1 md:px-1 md:py-[1px] rounded-sm border-3 md:border-2 border-[var(--color-primary)] text-[var(--color-primary)] tracking-widest font-bold hover:border-[var(--color-light)] hover:text-[var(--color-light)] transition"
           onClick={() =>
             window.open(
               "https://www.linkedin.com/messaging/thread/new/?recipient=mieszko-czubinski",
@@ -114,12 +112,6 @@ export default function Home() {
         >
           CONTACT ME
         </div>
-      </div>
-      <div className="absolute top-0 -right-13 text-[150px] 2xl:text-[230px] rotate-[45deg] font-detail hidden md:block text-[var(--color-white)] font-bold tracking-wider">
-        <div className="pl-44 text-[var(--color-primary)] text-shadow-white-xl">
-          Mieszko
-        </div>
-        <div className="text-shadow-primary-xl">Czubiński</div>
       </div>
     </div>
   );

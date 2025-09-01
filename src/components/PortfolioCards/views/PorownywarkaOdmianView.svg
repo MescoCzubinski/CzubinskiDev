@@ -1,5 +1,5 @@
 <svg width="450" height="750" viewBox="0 0 450 750" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1.5" y="1.5" width="447" height="747" rx="13.5" fill="#F0F0F0" stroke="#008437" stroke-width="3"/>
+<rect width="450" height="750" rx="15" fill="#F0F0F0"/>
 <mask id="path-2-inside-1_229_557" fill="white">
 <path d="M18 140H431V189H18V140Z"/>
 </mask>

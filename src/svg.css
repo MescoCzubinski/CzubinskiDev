@@ -1,5 +1,5 @@
 .home-stroke path {
-  stroke: var(--color-white);
+  stroke: var(--color-light);
   transition: all 0.3s ease-in-out;
 }
 .home-stroke:hover path {
@@ -7,7 +7,7 @@
   transition: all 0.3s ease-in-out;
 }
 .home-fill path {
-  fill: var(--color-white);
+  fill: var(--color-light);
   transition: all 0.3s ease-in-out;
 }
 .home-fill:hover path {
@@ -15,7 +15,7 @@
   transition: all 0.3s ease-in-out;
 }
 .nav-stroke path {
-  stroke: #f0f0f0;
+  stroke: var(--color-light);
   transition: all 0.3s ease-in-out;
 }
 .nav-stroke:hover path {
@@ -23,16 +23,10 @@
   transition: all 0.3s ease-in-out;
 }
 .nav-fill path {
-  fill: #f0f0f0;
+  fill: var(--color-light);
   transition: all 0.3s ease-in-out;
 }
 .nav-fill:hover path {
   fill: var(--color-primary);
   transition: all 0.3s ease-in-out;
-}
-.white path {
-  stroke: var(--color-white);
-}
-.dark path {
-  stroke: var(--color-background);
 }

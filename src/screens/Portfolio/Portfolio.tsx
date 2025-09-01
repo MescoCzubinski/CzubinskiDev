@@ -11,8 +11,6 @@ export default function Portfolio() {
       name={t("kalkulacja-straczkowe-title")}
       description={t("kalkulacja-straczkowe-description")}
       click={t("kalkulacja-straczkowe-click")}
-      backgroundColor="var(--color-topagrar)"
-      textColor="var(--color-white)"
       organisationName="TopAgrar"
       showCode={false}
       ghLink="https://github.com/MescoCzubinski/KalkulacjaStraczkowe"
@@ -23,8 +21,6 @@ export default function Portfolio() {
       name={t("wms-dev-title")}
       description={t("wms-dev-description")}
       click={t("wms-dev-click")}
-      backgroundColor="var(--color-white)"
-      textColor="var(--color-background)"
       organisationName="WMS_DEV"
       showCode={false}
       ghLink="https://github.com/WMS-DEV/homepage"
@@ -35,8 +31,6 @@ export default function Portfolio() {
       name={t("porownywarka-odmian-title")}
       description={t("porownywarka-odmian-description")}
       click={t("porownywarka-odmian-click")}
-      backgroundColor="var(--color-topagrar)"
-      textColor="var(--color-white)"
       organisationName="TopAgrar"
       showCode={false}
       ghLink="https://github.com/MescoCzubinski/PorownywarkaOdmian"
@@ -47,8 +41,6 @@ export default function Portfolio() {
       name={t("kalkulator-rozpylaczy-title")}
       description={t("kalkulator-rozpylaczy-description")}
       click={t("kalkulator-rozpylaczy-click")}
-      backgroundColor="var(--color-topagrar)"
-      textColor="var(--color-white)"
       organisationName="TopAgrar"
       showCode={false}
       ghLink="https://github.com/MescoCzubinski/KalkulatorDoboruRozpylaczy"
@@ -59,8 +51,6 @@ export default function Portfolio() {
       name={t("arvalis-title")}
       description={t("arvalis-description")}
       click={t("arvalis-click")}
-      backgroundColor="var(--color-arvalis)"
-      textColor="var(--color-white)"
       organisationName="Arvalis"
       showCode={true}
       ghLink="https://github.com/MescoCzubinski/arvalis"
@@ -89,10 +79,10 @@ export default function Portfolio() {
       key="portfolio"
       id="portfolio"
     >
-      <div className="h-full w-full md:w-7/10 xl:w-3/5 flex flex-col md:flex-row justify-center mx-2 md:mx-0 py-10 pl-2 pr-2 gap-y-12 md:gap-x-20 overflow-hidden">
-        <div className="h-full w-full relative overflow-hidden rounded-xl md:rounded-md shadow-frame ">
+      <div className="h-full w-full md:w-7/10 xl:w-3/5 flex flex-col md:flex-row justify-center mx-2 md:mx-0 py-10 md:py-5 pl-2 pr-2 gap-y-12 md:gap-x-20 overflow-hidden">
+        <div className="h-full w-full relative overflow-hidden rounded-xl md:rounded-md border-3 border-[var(--color-dark)]">
           <div
-            className="h-full w-full transition-all duration-900 ease-in-out"
+            className="h-full w-full transition-all duration-900 ease-in-out "
             style={{
               transform: `translateY(-${selectedIndex * 100}%)`,
             }}
@@ -119,10 +109,10 @@ export default function Portfolio() {
           {segments.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 border-[1.25px] border-[var(--color-white)] rounded-full transition-all duration-450 ease-in-out cursor-pointer hover:bg-[var(--color-primary)] ${
+              className={`w-3 h-3 border-[1.25px] border-[var(--color-light)] rounded-full transition-all duration-450 ease-in-out hover:bg-[var(--color-primary)] ${
                 index === selectedIndex
-                  ? "bg-[var(--color-white)]"
-                  : "bg-[var(--color-detail)]"
+                  ? "bg-[var(--color-light)]"
+                  : "bg-[var(--color-dark)]"
               }`}
               onClick={() => setSelectedIndex(index)}
             ></div>

@@ -46,11 +46,11 @@ export default function Navigation() {
   }
 
   return (
-    <div className="fixed left-0 z-20 w-full h-[calc(var(--navbar-width)*1.5)] md:h-screen md:w-[var(--navbar-width)] bg-[var(--color-detail)]">
+    <div className="fixed left-0 z-20 w-full h-[calc(var(--navbar-width)*1.5)] md:h-screen md:w-[var(--navbar-width)] bg-[var(--color-dark)]">
       <div className="flex h-full md:flex-col pt-[calc((var(--navbar-width)-9px)/2)] md:pt-0 md:items-center">
         <div className="ml-[calc(var(--navbar-width)/2-10px)] md:mt-[calc(var(--navbar-width)/2-10px)] md:ml-0">
           <GearIcon
-            className="nav-stroke w-9 h-9 md:w-7 md:h-7 cursor-pointer mb-5 md:mb-1"
+            className="nav-stroke w-9 h-9 md:w-7 md:h-7 mb-5 md:mb-1"
             onClick={() => setIsSettingsOpen(!isSettingsOpen)}
           />
           <div
@@ -62,7 +62,7 @@ export default function Navigation() {
               onClick={() => {
                 setLanguage("pl");
               }}
-              className="text-[var(--color-white)] hover:text-[var(--color-primary)] cursor-pointer text-xl md:text-lg transition"
+              className="text-[var(--color-light)] hover:text-[var(--color-primary)] text-xl md:text-lg transition"
             >
               PL
             </div>
@@ -70,11 +70,11 @@ export default function Navigation() {
               onClick={() => {
                 setLanguage("en");
               }}
-              className="text-[var(--color-white)] hover:text-[var(--color-primary)] cursor-pointer text-xl md:text-lg transition"
+              className="text-[var(--color-light)] hover:text-[var(--color-primary)] text-xl md:text-lg transition"
             >
               EN
             </div>
-            <InfoIcon className="nav-stroke cursor-pointer w-10 h-10 md:w-7 md:h-7 mt-1" />
+            <InfoIcon className="nav-stroke w-10 h-10 md:w-7 md:h-7 mt-1" />
           </div>
         </div>
         <div className="flex md:flex-col w-full md:h-full justify-end md:justify-center md:items-center gap-x-14 md:gap-y-14">
@@ -126,7 +126,7 @@ export default function Navigation() {
                   "noopener,noreferrer"
                 )
               }
-              className="cursor-pointer transition"
+              className="transition"
             >
               <GithubIcon className="nav-fill w-9 h-9 md:w-6 md:h-6" />
             </div>
@@ -139,13 +139,13 @@ export default function Navigation() {
                   "noopener,noreferrer"
                 )
               }
-              className="cursor-pointer transition"
+              className="transition"
             >
               <LinkedinIcon className="nav-fill w-9 h-9 md:w-6 md:h-6" />
             </div>
             <div
               title="Email"
-              className="cursor-pointer relative transition"
+              className="relative transition"
               onClick={() => copyEmail()}
             >
               <EmailIcon className="nav-stroke w-6 h-6 hidden md:block" />

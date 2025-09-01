@@ -14,8 +14,6 @@ export default function PortfolioCard({
   name,
   description,
   click,
-  backgroundColor,
-  textColor,
   organisationName,
   showCode,
   ghLink,
@@ -25,33 +23,23 @@ export default function PortfolioCard({
   name?: string;
   description?: string;
   click?: string;
-  backgroundColor: string;
-  textColor: string;
   organisationName?: string;
   showCode: boolean;
   ghLink?: string;
   goLiveLink?: string;
 }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const isMobile =
+    typeof window !== "undefined" ? window.innerWidth < 768 : false;
+  const [isOpen, setIsOpen] = useState(!isMobile);
   return (
     <div
-      className="w-full h-full flex flex-col md:flex-row p-5 gap-x-5 relative"
+      className="w-full h-full flex flex-col md:flex-row p-5 gap-x-5 relative bg-[var(--color-background)]"
       id={id}
-      style={{ backgroundColor: backgroundColor }}
     >
-      <div
-        className="flex flex-col md:w-1/2 justify-around gap-y-6 md:gap-y-4"
-        style={{ color: textColor }}
-      >
-        <div className="text-3xl 2xl:text-5xl font-bold test">{name}</div>
-        <div
-          className="text-xl md:text-lg 2xl:text-2xl"
-          dangerouslySetInnerHTML={{ __html: description ?? "" }}
-        />
-        <div
-          className="text-xl md:text-lg 2xl:text-2xl"
-          dangerouslySetInnerHTML={{ __html: click ?? "" }}
-        />
+      <div className="flex flex-col md:w-1/2 justify-around gap-y-6 md:gap-y-4">
+        <h1>{name}</h1>
+        <p dangerouslySetInnerHTML={{ __html: description ?? "" }}></p>
+        <p dangerouslySetInnerHTML={{ __html: click ?? "" }}></p>
         <div
           className={`flex w-full h-fit items-center ${
             showCode ? " justify-between" : "justify-around"
@@ -99,23 +87,17 @@ export default function PortfolioCard({
               }
               title="Click to view the code"
             >
-              <Code
-                className={
-                  textColor === "var(--color-white)"
-                    ? "w-10 white"
-                    : "w-10 dark"
-                }
-              />
+              <Code className="h-12 w-12" />
             </div>
           )}
         </div>
       </div>
       <div
-        className={`cursor-pointer absolute -bottom-90 md:bottom-0 md:top-0 right-0 p-5 md:h-full md:max-w-1/2 transition ${
+        className={`absolute -bottom-90 md:bottom-0 md:top-0 right-0 p-5 md:h-full md:max-w-1/2 transition ${
           isOpen ? "bottom-0" : ""
-        }`}
+        } ${isMobile ? "opacity-100" : "opacity-75"}`}
         onClick={() => {
-          if (isOpen) {
+          if (isOpen || !isMobile) {
             window.open(goLiveLink, "_blank", "noopener,noreferrer");
             setIsOpen(false);
           } else {
@@ -124,7 +106,7 @@ export default function PortfolioCard({
         }}
       >
         {id === "KalkulacjaStraczkowe" && (
-          <KalkulacjaStraczkoweView className="w-full h-fit md:h-full" />
+          <KalkulacjaStraczkoweView className="w-full h-fit md:h-full " />
         )}
         {id === "PorownywarkaOdmian" && (
           <PorownywarkaOdmianView className="w-full h-fit md:h-full" />
