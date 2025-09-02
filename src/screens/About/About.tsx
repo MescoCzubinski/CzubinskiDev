@@ -26,7 +26,7 @@ export default function About() {
             ></p>
           </div>
         </div>
-        <div className="h-full w-full flex md:flex-col gap-y-5 2xl:gap-y-7 mt-10 md:mt-0">
+        <div className="h-full w-full flex md:flex-col gap-y-2 2xl:gap-y-5 mt-10 md:mt-0">
           <div className=" w-full hidden md:flex items-center">
             <MyPhoto className="w-fit rounded-md border-2 border-[var(--color-dark)]" />
           </div>

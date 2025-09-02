@@ -48,7 +48,7 @@ export default function PortfolioCard({
           <div>
             {organisationName === "TopAgrar" && (
               <TopAgrarPlIcon
-                className="h-14 w-fit"
+                className="h-14 w-fit fill"
                 onClick={() =>
                   window.open(goLiveLink, "_blank", "noopener,noreferrer")
                 }
@@ -56,7 +56,7 @@ export default function PortfolioCard({
             )}
             {organisationName === "WMS_DEV" && (
               <WMS_DEVIcon
-                className="h-10 w-fit"
+                className="h-10 w-fit fill"
                 onClick={() =>
                   window.open(
                     "https://www.wmsdev.pl/",
@@ -68,7 +68,7 @@ export default function PortfolioCard({
             )}
             {organisationName === "Arvalis" && (
               <ArvalisIcon
-                className="h-8 w-fit"
+                className="h-8 w-fit fill"
                 onClick={() =>
                   window.open(
                     "https://www.arvalis.fr/",
@@ -87,7 +87,7 @@ export default function PortfolioCard({
               }
               title="Click to view the code"
             >
-              <Code className="h-12 w-12" />
+              <Code className="h-12 w-12 stroke" />
             </div>
           )}
         </div>

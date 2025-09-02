@@ -50,7 +50,7 @@ export default function Navigation() {
       <div className="flex h-full md:flex-col pt-[calc((var(--navbar-width)-9px)/2)] md:pt-0 md:items-center">
         <div className="ml-[calc(var(--navbar-width)/2-10px)] md:mt-[calc(var(--navbar-width)/2-10px)] md:ml-0">
           <GearIcon
-            className="nav-stroke w-9 h-9 md:w-7 md:h-7 mb-5 md:mb-1"
+            className="stroke w-9 h-9 md:w-7 md:h-7 mb-5 md:mb-1"
             onClick={() => setIsSettingsOpen(!isSettingsOpen)}
           />
           <div
@@ -74,7 +74,7 @@ export default function Navigation() {
             >
               EN
             </div>
-            <InfoIcon className="nav-stroke w-10 h-10 md:w-7 md:h-7 mt-1" />
+            <InfoIcon className="stroke w-10 h-10 md:w-7 md:h-7 mt-1" />
           </div>
         </div>
         <div className="flex md:flex-col w-full md:h-full justify-end md:justify-center md:items-center gap-x-14 md:gap-y-14">
@@ -86,7 +86,7 @@ export default function Navigation() {
               }}
             >
               <HomeIcon
-                className="nav-fill w-9 h-9 md:w-6 md:h-6 cursor-pointer"
+                className="fill w-9 h-9 md:w-6 md:h-6 cursor-pointer"
                 id="home-icon"
               />
             </div>
@@ -97,7 +97,7 @@ export default function Navigation() {
               }}
             >
               <About
-                className="nav-fill w-9 h-9 md:w-6 md:h-6 cursor-pointer"
+                className="fill w-9 h-9 md:w-6 md:h-6 cursor-pointer"
                 id="about-icon"
               />
             </div>
@@ -108,12 +108,12 @@ export default function Navigation() {
               }}
             >
               <PortfolioIcon
-                className="nav-stroke w-9 h-9 md:w-6 md:h-6 cursor-pointer"
+                className="stroke w-9 h-9 md:w-6 md:h-6 cursor-pointer"
                 id="portfolio-icon"
               />
             </div>
             {/* <div title="Texts" onClick={() => scroll("texts")}>
-              <TextsIcon className="nav-stroke w-7 h-7 cursor-pointer" id="texts-icon" />
+              <TextsIcon className="stroke w-7 h-7 cursor-pointer" id="texts-icon" />
             </div> */}
           </div>
           <div className="flex md:flex-col gap-4">
@@ -128,7 +128,7 @@ export default function Navigation() {
               }
               className="transition"
             >
-              <GithubIcon className="nav-fill w-9 h-9 md:w-6 md:h-6" />
+              <GithubIcon className="fill w-9 h-9 md:w-6 md:h-6" />
             </div>
             <div
               title="LinkedIn"
@@ -141,14 +141,14 @@ export default function Navigation() {
               }
               className="transition"
             >
-              <LinkedinIcon className="nav-fill w-9 h-9 md:w-6 md:h-6" />
+              <LinkedinIcon className="fill w-9 h-9 md:w-6 md:h-6" />
             </div>
             <div
               title="Email"
               className="relative transition"
               onClick={() => copyEmail()}
             >
-              <EmailIcon className="nav-stroke w-6 h-6 hidden md:block" />
+              <EmailIcon className="stroke w-6 h-6 hidden md:block" />
               {isCopied && (
                 <span className="absolute left-[var(--navbar-width)] top-[1px] text-[var(--color-primary)] text-nowrap">
                   {copyText}

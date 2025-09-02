@@ -53,7 +53,7 @@ export default function Portfolio() {
       click={t("arvalis-click")}
       organisationName="Arvalis"
       showCode={true}
-      ghLink="https://github.com/MescoCzubinski/arvalis"
+      ghLink="https://github.com/MescoCzubinski/LodgingRiskCalculator"
       goLiveLink="https://www.arvalis.czubinski.dev/"
     />,
   ];

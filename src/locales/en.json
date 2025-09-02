@@ -1,29 +1,30 @@
 {
   "about-title": "# about me",
-  "about-description-1": "I'm passionate about creating useful applications. Whether as a Developer or a Project Manager. I love <a title='Team in Scrum meaning'>TEAM</a> work, because when we are united we can easily ship products.",
-  "about-description-2": "Currently studing at <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>Wrocław University of Technology</a> at the Bachelor's program of Systems Engineering.",
-  "about-description-3": "Besides IT I love fantasy books and computer games. Especially grand strategy and RPG's from the polish game studio <a href='https://cdprojektred.com/' target='_blank' rel='noopener noreferrer' class='underline'>CD Projekt Red</a>.",
+  "about-description-1": "I'm passionate about creating useful applications — both as a Developer and as a Project Manager. I really enjoy working in a team; the best projects are created when we join forces and work together.",
+  "about-description-2": "I am a student of Systems Engineering at the <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>Wrocław University of Science and Technology</a>, where I develop both my technical and organizational skills.",
+  "about-description-3": "Outside of IT, I am interested in history, I read fantasy and political fiction, and I spend my free time playing strategy games and RPGs — especially those from CD Projekt Red.",
+
   "wmsdev-title": "# WMS_DEV",
-  "wmsdev-description-1": "Active programmer, Project Manager and co-president of the <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='underline'>WMS_DEV</a> scientific club at <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>Wrocław University of Technology</a>.",
-  "wmsdev-description-2": "We create web applications for the student community, all based on Scrum and market-leading technologies.",
+  "wmsdev-description-1": "I am an active developer, Project Manager, and co-president of the <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='underline'>WMS_DEV</a> student scientific club at my <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>university</a>.",
+  "wmsdev-description-2": "We create web applications for students, using the latest technologies and working in the Scrum methodology.",
 
   "kalkulacja-straczkowe-title": "# crop profitability calculator",
-  "kalkulacja-straczkowe-description": "Professional farmers calculate the profitability of crops, considering all revenues and costs. This calculator makes the process intuitive. Created for <a href='https://www.topagrar.pl/' target='_blank' rel='noopener noreferrer' class='underline'>topagrar.pl</a>.",
-  "kalkulacja-straczkowe-click": "Click below to try the app or explore the code.",
+  "kalkulacja-straczkowe-description": "Professional farmers calculate the profitability of planned crops, considering all revenues and costs. This calculator makes the process intuitive. Created for <a href='https://www.topagrar.pl/' target='_blank' rel='noopener noreferrer' class='underline'>topagrar.pl</a>.",
+  "kalkulacja-straczkowe-click": "Click below to see the application.",
 
   "wms-dev-title": "# WMS_homepage",
-  "wms-dev-description": "Homepage of the CS Scientific Circle <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='underline'>WMS_DEV</a> at my university — <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>Wrocław University of Science and Technology</a>. This is a team project, where I serve as both Project Manager and Frontend Developer.",
+  "wms-dev-description": "Homepage of the <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='underline'>WMS_DEV</a> student scientific club at my university — <a href='https://www.pwr.edu.pl/' target='_blank' rel='noopener noreferrer' class='underline'>Wrocław University of Science and Technology</a>. This is a team project, in which I serve as Project Manager and Frontend Developer.",
   "wms-dev-click": "Check out the code created by the team of epic developers from <a href='https://wmsdev.pl' target='_blank' rel='noopener noreferrer' class='underline'>WMS_DEV</a>.",
 
   "porownywarka-odmian-title": "# variety comparison tool",
-  "porownywarka-odmian-description": "The economic success of crop production depends on choosing the right variety. This tool helps interpret large goverment databases (source: <a href='https://coboru.gov.pl/' target='_blank' rel='noopener noreferrer' class='underline'>COBORU</a>). It makes sorting and comparing data much easier than in Excel.",
-  "porownywarka-odmian-click": "Click below to see the app in action or explore the code.",
+  "porownywarka-odmian-description": "The economic success of crop production depends on choosing the right variety. This application helps interpret large public databases (source: <a href='https://coboru.gov.pl/' target='_blank' rel='noopener noreferrer' class='underline'>COBORU</a>). It makes sorting and comparing data much easier than in Excel.",
+  "porownywarka-odmian-click": "Click below to see the application.",
 
   "kalkulator-rozpylaczy-title": "# spray tip selection tool",
-  "kalkulator-rozpylaczy-description": "Plant protection treatments require selecting the correct pressure, speed, and liquid dose. The result is a specific spray tip (a replaceable machine part identified by number and color). This tool helps you choose the right spray tip and set the operating parameters.",
-  "kalkulator-rozpylaczy-click": "Click below to see the tool in action or explore the code.",
+  "kalkulator-rozpylaczy-description": "Plant protection treatments require selecting the correct pressure, speed, and liquid dose. The result is a specific spray tip (a replaceable machine part identified by number and color). This tool suggests which spray tip to choose and how to set the operating parameters.",
+  "kalkulator-rozpylaczy-click": "Click below to see the application.",
 
-  "arvalis-title": "# coming soon...",
-  "arvalis-description": "A technology demonstrator for the <a href='https://arvalis.fr/' target='_blank' rel='noopener noreferrer' class='underline'>Arvalis Institute</a>. Built using a table  from <a href='https://www.arvalis.fr/infos-techniques/ble-et-orge-dhiver-evaluer-le-risque-de-verse-avant-dintervenir' target='_blank' rel='noopener noreferrer' class='underline'>www.arvalis.fr</a>. It allows quick estimation of wheat lodging risk based on soil, variety, nitrogen fertilization, and biomass at the end of tillering stage.",
-  "arvalis-click": "Click below to see the tool in action or explore the code."
+  "arvalis-title": "# lodging risk calculator",
+  "arvalis-description": "A technology demonstrator for the <a href='https://arvalis.fr/' target='_blank' rel='noopener noreferrer' class='underline'>Arvalis Institute</a>. Created on the basis of a table from <a href='https://www.arvalis.fr/infos-techniques/ble-et-orge-dhiver-evaluer-le-risque-de-verse-avant-dintervenir' target='_blank' rel='noopener noreferrer' class='underline'>www.arvalis.fr</a>. It allows quick estimation of wheat lodging risk depending on soil, variety, nitrogen fertilization, and biomass at the end of the tillering stage.",
+  "arvalis-click": "Click below to see the code or the application in action."
 }

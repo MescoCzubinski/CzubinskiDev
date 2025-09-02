@@ -30,7 +30,7 @@ export default function Home() {
           setDisplayedPosition(
             currentPosition.substring(0, displayedPosition.length - 1)
           );
-        }, 100);
+        }, 150);
       } else {
         setIsDeleting(false);
         setPositionIndex((prevIndex) => (prevIndex + 1) % positions.length);
@@ -42,7 +42,7 @@ export default function Home() {
           setDisplayedPosition(
             currentPosition.substring(0, displayedPosition.length + 1)
           );
-        }, 150);
+        }, 200);
       } else {
         //break
         timeout = setTimeout(() => {
@@ -62,40 +62,40 @@ export default function Home() {
     >
       <div className="h-full flex flex-col items-start justify-center text-[var(--color-light)] pl-3 gap-y-14 md:gap-y-6">
         <div className="flex flex-col gap-y-1">
-          <h2># Hi,</h2>
+          <h3># Hi,</h3>
           <div className="flex">
-            <h2 className="mr-3"># I'm </h2>
-            <h3>Mieszko</h3>
-            <h2>,</h2>
+            <h3 className="mr-4"># I'm </h3>
+            <h2>Mieszko</h2>
+            <h3>,</h3>
           </div>
-          <h2>
+          <h3>
             {"# " + displayedPosition}
             <span className="animate-pulse">|</span>
-          </h2>
+          </h3>
         </div>
         <div className="flex gap-3 md:gap-2 flex-wrap pr-3">
-          <JavaScriptIcon className="h-12 w-12 md:h-8 md:w-8 home-fill" />
-          <ReactIcon className="h-12 md:h-8 w-fit home-fill" />
-          <TypeScriptIcon className="h-12 md:h-8 w-12 md:w-8 home-fill" />
-          <FigmaIcon className="h-12 md:h-8 w-fit home-stroke" />
-          <TailwindCSSIcon className="h-12 md:h-8 w-11 md:w-10 home-fill" />
+          <JavaScriptIcon className="h-12 w-12 md:h-8 md:w-8 fill" />
+          <ReactIcon className="h-12 md:h-8 w-fit fill" />
+          <TypeScriptIcon className="h-12 md:h-8 w-12 md:w-8 fill" />
+          <FigmaIcon className="h-12 md:h-8 w-fit stroke" />
+          <TailwindCSSIcon className="h-12 md:h-8 w-11 md:w-10 fill" />
           <ExcelIcon
-            className="h-12 md:h-8 w-12 md:w-8 home-fill"
+            className="h-12 md:h-8 w-12 md:w-8 fill"
             title="only ONLYOFFICE :D"
           />
-          <GitIcon className="h-12 md:h-8 w-12 md:w-8 home-fill" />
-          <RIcon className="h-12 md:h-8 w-fit home-fill" />
-          <HTMLIcon className="h-12 md:h-8 w-fit home-fill" />
+          <GitIcon className="h-12 md:h-8 w-12 md:w-8 fill" />
+          <RIcon className="h-12 md:h-8 w-fit fill" />
+          <HTMLIcon className="h-12 md:h-8 w-fit fill" />
           <CSSIcon
-            className="h-12 md:h-8 w-fit home-fill"
+            className="h-12 md:h-8 w-fit fill"
             title="I dunno center a div"
           />
           <CppIcon
-            className="h-12 md:h-8 w-fit home-fill"
+            className="h-12 md:h-8 w-fit fill"
             title="What is a pointer?"
           />
           <PythonIcon
-            className="h-12 md:h-8 w-12 md:w-8 home-fill"
+            className="h-12 md:h-8 w-12 md:w-8 fill"
             title="Where types?"
           />
         </div>

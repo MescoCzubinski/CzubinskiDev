@@ -36,8 +36,8 @@ body,
   position: fixed;
   top: 0;
   left: 0;
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   z-index: 1000;
   border-radius: 50%;
   pointer-events: none;
@@ -45,38 +45,52 @@ body,
   border: 1.5px solid var(--color-dark);
 }
 .transition {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 h1 {
   font-family: "Noto Sans Mono", system-ui, sans-serif;
   @apply text-3xl 2xl:text-5xl font-bold text-[var(--color-primary)] hover:text-[var(--color-light)] transition;
 }
+h1:hover {
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: var(--primary, var(--color-primary));
+}
 h2 {
   font-family: "Noto Sans Mono", system-ui, sans-serif;
-  @apply text-4xl 2xl:text-5xl font-bold text-[var(--color-light)];
-
-  text-shadow: 2px 2px 0 var(--color-primary);
-  -webkit-text-stroke-width: 0.75px;
-  -webkit-text-stroke-color: var(--detail, var(--color-dark));
+  @apply text-4xl 2xl:text-5xl font-bold text-[var(--color-light)] hover:text-[var(--color-primary)] transition;
 }
 h3 {
   font-family: "Noto Sans Mono", system-ui, sans-serif;
   @apply text-4xl 2xl:text-5xl font-bold text-[var(--color-primary)];
-
-  text-shadow: 2px 2px 0 var(--color-light);
-  -webkit-text-stroke-width: 0.6px;
-  -webkit-text-stroke-color: var(--detail, var(--color-dark));
 }
 p {
   font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
   @apply text-xl md:text-lg 2xl:text-2xl text-[var(--color-light)];
 }
-
+a:hover {
+  @apply text-[var(--color-primary)] transition;
+}
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+}
+.stroke path {
+  stroke: var(--color-light);
+  transition: all 0.3s ease-in-out;
+}
+.stroke:hover path {
+  stroke: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+.fill path {
+  fill: var(--color-light);
+  transition: all 0.3s ease-in-out;
+}
+.fill:hover path {
+  fill: var(--color-primary);
+  transition: all 0.3s ease-in-out;
 }

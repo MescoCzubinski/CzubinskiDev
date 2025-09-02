@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App.tsx";
 import { initI18next } from "./i18next";
 import "./cursor.ts";
-import "./svg.css";
 
 initI18next();
 createRoot(document.getElementById("root")!).render(
