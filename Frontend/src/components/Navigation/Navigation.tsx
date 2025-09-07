@@ -1,7 +1,6 @@
 import { useState } from "react";
 import i18next from "../../i18next";
 import GearIcon from "./icons/gear.svg?react";
-import InfoIcon from "./icons/info.svg?react";
 import HomeIcon from "./icons/home.svg?react";
 import About from "./icons/about.svg?react";
 import PortfolioIcon from "./icons/portfolio.svg?react";
@@ -74,7 +73,6 @@ export default function Navigation() {
             >
               EN
             </div>
-            <InfoIcon className="stroke w-10 h-10 md:w-7 md:h-7 mt-1" />
           </div>
         </div>
         <div className="flex md:flex-col w-full md:h-full justify-end md:justify-center md:items-center gap-x-14 md:gap-y-14">

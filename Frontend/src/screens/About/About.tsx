@@ -6,7 +6,7 @@ export default function About() {
   const { t } = useTranslation();
   return (
     <div
-      className="w-screen h-screen pt-[calc(var(--navbar-width)*2)] md:pt-0 flex justify-center relative z-10 border-b-2 border-[var(--color-dark)] md:border-0"
+      className="w-screen h-screen pt-[calc(var(--navbar-width)*1.5)] md:pt-0 flex justify-center relative z-10"
       key="about"
       id="about"
     >
@@ -61,7 +61,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-1 duck-animation">
+      <div className="absolute bottom-1 duck-animation hidden md:block">
         <RubberDuck />
       </div>
     </div>

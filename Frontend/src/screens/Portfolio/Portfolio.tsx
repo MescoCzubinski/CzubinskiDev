@@ -79,7 +79,7 @@ export default function Portfolio() {
       key="portfolio"
       id="portfolio"
     >
-      <div className="h-full w-full md:w-7/10 xl:w-3/5 flex flex-col md:flex-row justify-center mx-2 md:mx-0 py-10 md:py-5 pl-2 pr-2 gap-y-12 md:gap-x-20 overflow-hidden">
+      <div className="h-full w-full md:w-7/10 xl:w-3/5 flex flex-col md:flex-row justify-center mx-2 md:mx-0 pt-24 py-12 md:pt-5 md:py-5 pl-2 pr-2 gap-y-12 md:gap-x-20 overflow-hidden">
         <div className="h-full w-full relative overflow-hidden rounded-xl md:rounded-md border-3 border-[var(--color-dark)]">
           <div
             className="h-full w-full transition-all duration-900 ease-in-out "

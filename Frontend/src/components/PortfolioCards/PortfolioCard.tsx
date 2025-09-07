@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Code from "./icons/Code.svg?react";
 import TopAgrarPlIcon from "./icons/TopAgrarPl.svg?react";
 import ArvalisIcon from "./icons/Arvalis.svg?react";
@@ -28,57 +27,52 @@ export default function PortfolioCard({
   ghLink?: string;
   goLiveLink?: string;
 }) {
-  const isMobile =
-    typeof window !== "undefined" ? window.innerWidth < 768 : false;
-  const [isOpen, setIsOpen] = useState(!isMobile);
   return (
     <div
-      className="w-full h-full flex flex-col md:flex-row p-5 gap-x-5 relative bg-[var(--color-background)]"
+      className="w-full h-full flex flex-col md:flex-row p-5 gap-x-5 bg-[var(--color-background)]"
       id={id}
     >
-      <div className="flex flex-col md:w-1/2 justify-around gap-y-6 md:gap-y-4">
+      <div className="flex flex-col md:w-1/2 justify-around gap-y-8 md:gap-y-4">
         <h1>{name}</h1>
         <p dangerouslySetInnerHTML={{ __html: description ?? "" }}></p>
         <p dangerouslySetInnerHTML={{ __html: click ?? "" }}></p>
         <div
           className={`flex w-full h-fit items-center ${
-            showCode ? " justify-between" : "justify-around"
+            showCode ? "justify-between" : "justify-around"
           }`}
         >
-          <div>
-            {organisationName === "TopAgrar" && (
-              <TopAgrarPlIcon
-                className="h-14 w-fit fill"
-                onClick={() =>
-                  window.open(goLiveLink, "_blank", "noopener,noreferrer")
-                }
-              />
-            )}
-            {organisationName === "WMS_DEV" && (
-              <WMS_DEVIcon
-                className="h-10 w-fit fill"
-                onClick={() =>
-                  window.open(
-                    "https://www.wmsdev.pl/",
-                    "_blank",
-                    "noopener,noreferrer"
-                  )
-                }
-              />
-            )}
-            {organisationName === "Arvalis" && (
-              <ArvalisIcon
-                className="h-8 w-fit fill"
-                onClick={() =>
-                  window.open(
-                    "https://www.arvalis.fr/",
-                    "_blank",
-                    "noopener,noreferrer"
-                  )
-                }
-              />
-            )}
-          </div>
+          {organisationName === "TopAgrar" && (
+            <TopAgrarPlIcon
+              className="h-18 md:h-14 w-fit fill"
+              onClick={() =>
+                window.open(goLiveLink, "_blank", "noopener,noreferrer")
+              }
+            />
+          )}
+          {organisationName === "WMS_DEV" && (
+            <WMS_DEVIcon
+              className="h-14 md:h-10 w-fit fill"
+              onClick={() =>
+                window.open(
+                  "https://www.wmsdev.pl/",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            />
+          )}
+          {organisationName === "Arvalis" && (
+            <ArvalisIcon
+              className="h-12 md:h-8 w-fit fill"
+              onClick={() =>
+                window.open(
+                  "https://www.arvalis.fr/",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            />
+          )}
           {showCode && (
             <div
               className="cursor-pointer"
@@ -93,16 +87,11 @@ export default function PortfolioCard({
         </div>
       </div>
       <div
-        className={`absolute -bottom-90 md:bottom-0 md:top-0 right-0 p-5 md:h-full md:max-w-1/2 transition ${
-          isOpen ? "bottom-0" : ""
-        } ${isMobile ? "opacity-100" : "opacity-75"}`}
+        className={
+          "hidden md:block p-5 md:h-full md:max-w-1/2 transition opacity-75"
+        }
         onClick={() => {
-          if (isOpen || !isMobile) {
-            window.open(goLiveLink, "_blank", "noopener,noreferrer");
-            setIsOpen(false);
-          } else {
-            setIsOpen(true);
-          }
+          window.open(goLiveLink, "_blank", "noopener,noreferrer");
         }}
       >
         {id === "KalkulacjaStraczkowe" && (

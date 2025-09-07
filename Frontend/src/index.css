@@ -12,12 +12,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* --color-background: #f0f0f0;
-  --color-light: #252525; */
-  /* --color-background: #252525;
-  --color-light: #f0f0f0;
-  --color-dark: #101010;
-  --color-primary: #19f2d1; */
   --color-background: #1f1f28;
   --color-light: #dcd7ba;
   --color-dark: #181820;
@@ -50,7 +44,7 @@ body,
 
 h1 {
   font-family: "Noto Sans Mono", system-ui, sans-serif;
-  @apply text-3xl 2xl:text-5xl font-bold text-[var(--color-primary)] hover:text-[var(--color-light)] transition;
+  @apply text-4xl md:text-3xl 2xl:text-5xl font-bold text-[var(--color-primary)] hover:text-[var(--color-light)] transition;
 }
 h1:hover {
   -webkit-text-stroke-width: 0.25px;
