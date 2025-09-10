@@ -5,6 +5,7 @@ import HomeIcon from "./icons/home.svg?react";
 import About from "./icons/about.svg?react";
 import PortfolioIcon from "./icons/portfolio.svg?react";
 // import TextsIcon from "./icons/texts.svg?react";
+import GitLabIcon from "./icons/gitlab.svg?react";
 import GithubIcon from "./icons/github.svg?react";
 import LinkedinIcon from "./icons/linkedin.svg?react";
 import EmailIcon from "./icons/email.svg?react";
@@ -115,6 +116,19 @@ export default function Navigation() {
             </div> */}
           </div>
           <div className="flex md:flex-col gap-4">
+            <div
+              title="GitLab"
+              onClick={() =>
+                window.open(
+                  "https://gitlab.com/MescoCzubinski",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              className="transition"
+            >
+              <GitLabIcon className="fill w-9 h-9 md:w-6 md:h-6" />
+            </div>
             <div
               title="Github"
               onClick={() =>

@@ -1,6 +1,10 @@
 import { useEffect, useRef } from "react";
 
-export default function Carusel({ children }: { children: React.ReactNode }) {
+export default function Background({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const carouselRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 

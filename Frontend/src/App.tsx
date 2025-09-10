@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { changeLanguage } from "i18next";
 import Navigation from "./components/Navigation/Navigation";
-import Carusel from "./components/Carusel/Carusel";
+import Background from "./components/Background/Background";
 import Home from "./screens/Home/Home";
 import About from "./screens/About/About";
 import Portfolio from "./screens/Portfolio/Portfolio";
@@ -25,11 +25,11 @@ function App() {
   return (
     <>
       <Navigation />
-      <Carusel>
+      <Background>
         <Home />
         <About />
         <Portfolio />
-      </Carusel>
+      </Background>
     </>
   );
 }

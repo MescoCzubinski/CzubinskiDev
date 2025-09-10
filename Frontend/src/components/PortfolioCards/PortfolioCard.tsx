@@ -32,12 +32,12 @@ export default function PortfolioCard({
       className="w-full h-full flex flex-col md:flex-row p-5 gap-x-5 bg-[var(--color-background)]"
       id={id}
     >
-      <div className="flex flex-col md:w-1/2 justify-around gap-y-8 md:gap-y-4">
+      <div className="flex flex-col h-full md:w-1/2 justify-around gap-y-8 md:gap-y-4">
         <h1>{name}</h1>
         <p dangerouslySetInnerHTML={{ __html: description ?? "" }}></p>
         <p dangerouslySetInnerHTML={{ __html: click ?? "" }}></p>
         <div
-          className={`flex w-full h-fit items-center ${
+          className={`flex w-full h-full md:h-fit items-center ${
             showCode ? "justify-between" : "justify-around"
           }`}
         >
@@ -87,9 +87,7 @@ export default function PortfolioCard({
         </div>
       </div>
       <div
-        className={
-          "hidden md:block p-5 md:h-full md:max-w-1/2 transition opacity-75"
-        }
+        className={"hidden md:block p-5 h-full max-w-1/2 transition opacity-75"}
         onClick={() => {
           window.open(goLiveLink, "_blank", "noopener,noreferrer");
         }}
