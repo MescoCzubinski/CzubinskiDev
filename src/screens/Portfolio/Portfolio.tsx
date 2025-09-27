@@ -12,7 +12,7 @@ export default function Portfolio() {
       description={t("kalkulacja-straczkowe-description")}
       click={t("kalkulacja-straczkowe-click")}
       organisationName="TopAgrar"
-      showCode={false}
+      showCode={true}
       ghLink="https://github.com/MescoCzubinski/KalkulacjaStraczkowe"
       goLiveLink="https://www.topagrar.pl/kalkulatory/jak-policzyc-oplacalnosc-uprawy-straczkowych-2529371"
     />,
@@ -32,7 +32,7 @@ export default function Portfolio() {
       description={t("porownywarka-odmian-description")}
       click={t("porownywarka-odmian-click")}
       organisationName="TopAgrar"
-      showCode={false}
+      showCode={true}
       ghLink="https://github.com/MescoCzubinski/PorownywarkaOdmian"
       goLiveLink="https://www.topagrar.pl/porownywarki/porownywarka-odmian-zboz-jarych-2025-aplikacja-pokaze-liste-dla-twojego-wojewodztwa-2526125"
     />,
@@ -42,20 +42,20 @@ export default function Portfolio() {
       description={t("kalkulator-rozpylaczy-description")}
       click={t("kalkulator-rozpylaczy-click")}
       organisationName="TopAgrar"
-      showCode={false}
+      showCode={true}
       ghLink="https://github.com/MescoCzubinski/KalkulatorDoboruRozpylaczy"
       goLiveLink="https://www.topagrar.pl/kalkulatory/jak-dobrac-rozpylacz-i-parametry-opryskiwacza-2531836"
     />,
-    <PortfolioCard
-      id="arvalis"
-      name={t("arvalis-title")}
-      description={t("arvalis-description")}
-      click={t("arvalis-click")}
-      organisationName="Arvalis"
-      showCode={true}
-      ghLink="https://github.com/MescoCzubinski/LodgingRiskCalculator"
-      goLiveLink="https://www.arvalis.czubinski.dev/"
-    />,
+    // <PortfolioCard
+    //   id="arvalis"
+    //   name={t("arvalis-title")}
+    //   description={t("arvalis-description")}
+    //   click={t("arvalis-click")}
+    //   organisationName="Arvalis"
+    //   showCode={true}
+    //   ghLink="https://github.com/MescoCzubinski/LodgingRiskCalculator"
+    //   goLiveLink="https://www.arvalis.czubinski.dev/"
+    // />,
   ];
 
   useEffect(() => {

@@ -3,10 +3,10 @@ version: "3.7"
 services:
   frontend:
     build:
-      context: "./Frontend"
+      context: "./"
 
     volumes:
-      - ./Frontend:/app
+      - .:/app
       - /app/node_modules
 
     ports:
