@@ -50,7 +50,7 @@ export default function Navigation() {
       <div className="flex h-full md:flex-col pt-[calc((var(--navbar-width)-9px)/2)] md:pt-0 md:items-center">
         <div className="ml-[calc(var(--navbar-width)/2-10px)] md:mt-[calc(var(--navbar-width)/2-10px)] md:ml-0">
           <GearIcon
-            className="stroke w-9 h-9 md:w-7 md:h-7 mb-5 md:mb-1"
+            className="stroke w-9 h-9 md:w-7 md:h-7 mr-1 md:mr-0 mb-5 md:mb-1"
             onClick={() => setIsSettingsOpen(!isSettingsOpen)}
           />
           <div
@@ -76,7 +76,7 @@ export default function Navigation() {
             </div>
           </div>
         </div>
-        <div className="flex md:flex-col w-full md:h-full justify-end md:justify-center md:items-center gap-x-14 md:gap-y-14">
+        <div className="flex md:flex-col w-full md:h-full justify-end md:justify-center md:items-center gap-x-14 md:gap-y-14 mx-[calc(var(--navbar-width)/2-10px)] md:mx-0 md:mr-0">
           <div className="flex md:flex-col gap-4">
             <div
               title="Home"
@@ -96,7 +96,7 @@ export default function Navigation() {
               }}
             >
               <About
-                className="fill w-9 h-9 md:w-6 md:h-6 cursor-pointer"
+                className="fill w-9 h-9 md:w-6 md:h-6 cursor-pointer hidden md:block"
                 id="about-icon"
               />
             </div>
@@ -107,7 +107,7 @@ export default function Navigation() {
               }}
             >
               <PortfolioIcon
-                className="stroke w-9 h-9 md:w-6 md:h-6 cursor-pointer"
+                className="stroke w-9 h-9 md:w-6 md:h-6 cursor-pointer hidden md:block"
                 id="portfolio-icon"
               />
             </div>
@@ -160,9 +160,9 @@ export default function Navigation() {
               className="relative transition"
               onClick={() => copyEmail()}
             >
-              <EmailIcon className="stroke w-6 h-6 hidden md:block" />
+              <EmailIcon className="stroke w-9 h-9 md:w-6 md:h-6" />
               {isCopied && (
-                <span className="absolute left-[var(--navbar-width)] top-[1px] text-[var(--color-primary)] text-nowrap">
+                <span className="absolute md:left-[var(--navbar-width)] top-16 left-1 right-1 rotate-90 md:rotate-0 md:top-[1px] text-[var(--color-primary)] text-nowrap">
                   {copyText}
                 </span>
               )}

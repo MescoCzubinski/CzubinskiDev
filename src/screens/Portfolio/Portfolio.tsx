@@ -68,7 +68,7 @@ export default function Portfolio() {
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedIndex((prevIndex) => (prevIndex + 1) % segments.length);
-    }, 100000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [selectedIndex]);
@@ -105,11 +105,11 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="h-4 w-full md:w-4 md:h-full items-center justify-center flex md:flex-col gap-10">
+        <div className="h-4 w-full md:w-3 md:h-full items-center justify-center flex md:flex-col gap-10">
           {segments.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 border-[1.25px] border-[var(--color-light)] rounded-full transition-all duration-450 ease-in-out hover:bg-[var(--color-primary)] ${
+              className={`w-4 md:w-3 h-4 md:h-3 border-[1.25px] border-[var(--color-light)] rounded-full transition-all duration-450 ease-in-out hover:bg-[var(--color-primary)] ${
                 index === selectedIndex
                   ? "bg-[var(--color-light)]"
                   : "bg-[var(--color-dark)]"

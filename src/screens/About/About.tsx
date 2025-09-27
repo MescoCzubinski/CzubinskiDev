@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./duck-animation.css";
 import RubberDuck from "./icons/RubberDuck.svg?react";
 
 export default function About() {
+  const [showQuack, setShowQuack] = useState(false);
   const { t } = useTranslation();
   return (
     <div
@@ -27,7 +29,7 @@ export default function About() {
         </div>
         <div className="h-full w-full flex md:flex-col gap-y-2 2xl:gap-y-5 mt-10 md:mt-0">
           <div
-            className="h-full w-full hidden md:flex items-center rounded-md border-2 border-[var(--color-dark)] overflow-hidden opacity-75"
+            className="h-full w-full hidden md:flex items-center rounded-md border-3 border-[var(--color-dark)] overflow-hidden opacity-65"
             onClick={() =>
               window.open(
                 "https://www.linkedin.com/in/mieszko-czubinski/",
@@ -62,7 +64,16 @@ export default function About() {
         </div>
       </div>
       <div className="absolute bottom-1 duck-animation hidden md:block">
-        <RubberDuck />
+        {showQuack && <p>quack!</p>}
+        <RubberDuck
+          onClick={() => {
+            setShowQuack(true);
+            const audio = new Audio("/quack.mp3");
+            audio.play();
+
+            setTimeout(() => setShowQuack(false), 1000);
+          }}
+        />
       </div>
     </div>
   );
