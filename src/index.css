@@ -47,7 +47,7 @@ h1 {
   @apply text-4xl md:text-3xl 2xl:text-5xl font-bold text-[var(--color-primary)] hover:text-[var(--color-light)] transition;
 }
 h1:hover {
-  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-width: 0.4px;
   -webkit-text-stroke-color: var(--primary, var(--color-primary));
 }
 h2 {

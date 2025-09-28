@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import JavaScriptIcon from "./icons/JavaScript.svg?react";
 import TypeScriptIcon from "./icons/TypeScript.svg?react";
+import NodeJSIcon from "./icons/NodeJS.svg?react";
+import DockerIcon from "./icons/Docker.svg?react";
 import ReactIcon from "./icons/React.svg?react";
 import GitIcon from "./icons/Git.svg?react";
 import FigmaIcon from "./icons/Figma.svg?react";
 import TailwindCSSIcon from "./icons/TailwindCSS.svg?react";
 import ExcelIcon from "./icons/Excel.svg?react";
 import RIcon from "./icons/R.svg?react";
-import HTMLIcon from "./icons/HTML.svg?react";
-import CSSIcon from "./icons/CSS.svg?react";
 import PythonIcon from "./icons/Python.svg?react";
 import CppIcon from "./icons/Cpp.svg?react";
 
@@ -74,22 +74,19 @@ export default function Home() {
           </h3>
         </div>
         <div className="flex gap-3 md:gap-2 flex-wrap pr-3">
-          <JavaScriptIcon className="h-12 w-12 md:h-8 md:w-8 fill" />
-          <ReactIcon className="h-12 md:h-8 w-fit fill" />
           <TypeScriptIcon className="h-12 md:h-8 w-12 md:w-8 fill" />
+          <ReactIcon className="h-12 md:h-8 w-fit fill" />
+          <NodeJSIcon className="h-12 md:h-8 w-fit fill" />
+          <JavaScriptIcon className="h-12 w-12 md:h-8 md:w-8 fill" />
           <FigmaIcon className="h-12 md:h-8 w-fit stroke" />
           <TailwindCSSIcon className="h-12 md:h-8 w-11 md:w-10 fill" />
+          <DockerIcon className="h-12 md:h-8 w-fit fill" />
           <ExcelIcon
             className="h-12 md:h-8 w-12 md:w-8 fill"
             title="only ONLYOFFICE :D"
           />
           <GitIcon className="h-12 md:h-8 w-12 md:w-8 fill" />
           <RIcon className="h-12 md:h-8 w-fit fill" />
-          <HTMLIcon className="h-12 md:h-8 w-fit fill" />
-          <CSSIcon
-            className="h-12 md:h-8 w-fit fill"
-            title="I dunno center a div"
-          />
           <CppIcon
             className="h-12 md:h-8 w-fit fill"
             title="What is a pointer?"
